@@ -361,6 +361,9 @@ End Documentations
 Sponsers
 **************
 **************/
+section.Sponsers{
+    overflow-x: hidden;
+}
 section.Sponsers .Pattern1{
     position: absolute;
     top: -20%;
@@ -377,6 +380,14 @@ section.Sponsers .Pattern2{
 section.Sponsers .SponsersImg {
     z-index: 100;
     position: relative;
+}
+section.Sponsers .SponserDiv {
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+section.Sponsers .SponserDiv img{
+    width: 50%;
 }
 /*************
 *************
@@ -439,7 +450,6 @@ End Footer
         height: 130px;
         bottom: 4%;
 
-        left: 10%;
 
     }
 
