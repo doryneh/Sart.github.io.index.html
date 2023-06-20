@@ -1,0 +1,213 @@
+@font-face {
+    font-family: HT;
+    src: url(../fonts/HTBaybarsDisplay-Regular.otf);
+}
+
+body {
+    direction: rtl;
+    font-family: HT;
+}
+
+
+
+/*************
+*************
+Navar
+**************
+**************/
+nav.navbar {
+    background-color: black;
+}
+
+nav.navbar .navbar-collapse .navbar-nav .nav-link {
+    color: #DADADA;
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+nav.navbar .navbar-collapse .navbar-nav .nav-link.active, nav.navbar .navbar-collapse .navbar-nav .nav-link:hover, nav.navbar .form-select:hover {
+    color: white;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+}
+
+nav.navbar .navbar-collapse .navbar-nav .nav-link.active .roundedActiveLink, nav.navbar .navbar-collapse .navbar-nav .nav-link:hover .roundedActiveLink {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #C5B2A3;
+    position: absolute;
+    left: 50%;
+    bottom: -5%;
+    transform: translateX(-50%);
+}
+
+nav.navbar .form-select {
+    width: fit-content;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    color: #DADADA;
+    box-shadow: none;
+
+
+}
+
+nav.navbar .form-select option {
+    color: black;
+}
+
+/*************
+*************
+End Navar
+**************
+**************/
+
+
+/*************
+*************
+Header
+**************
+**************/
+header.header {
+    background-image: url(../images/Banmer\ Bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+header.header .HeaderText  img{
+    mix-blend-mode: lighten;
+}
+header.header .HeaderText h1 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 59px;
+    color: white;
+    margin: 30px 0;
+
+}
+
+header.header .HeaderText h1 span {
+    color: #C5B2A3;
+}
+
+header.header .HeaderText h2 {
+    font-size: 24px;
+    line-height: 150%;
+
+    font-weight: 800;
+    color: #DADADA;
+}
+header.header .HeaderText a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+font-size: 24px;
+line-height: 29px;
+color: #131313;
+background: #C5B2A3;
+gap: 8px;
+text-decoration: none;
+padding: 15px 35px;
+margin-top: 20px;
+transition: 0.3s ease all;
+}
+header.header .HeaderText a:hover{
+    background-color: #a39387;
+    transform: scale(1.1);
+}
+header.header .ImagePart {
+    position: relative;
+}
+
+header.header .ImagePart img {
+    z-index: 100;
+    width: 90%;
+}
+
+header.header .ImagePart .pinkRectangle {
+    background: #C5B2A3;
+    position: absolute;
+    width: 73%;
+    height: 130px;
+    bottom: 4%;
+
+    left: 0%;
+
+}
+
+header.header  .blueRectangle {
+    background: #4762B3;
+    position: absolute;
+    width: 230px;
+    height: 95%;
+    top: 0%;
+    left: 15%;
+    z-index: 10;
+}
+
+/*************
+*************
+end Header
+**************
+**************/
+
+/*************
+*************
+About Us
+**************
+**************/
+section.AboutUs .Title {
+    font-weight: 900;
+font-size: 48px;
+line-height: 59px;
+text-align: center;
+color: #131313;
+
+}
+section.AboutUs  p{
+    font-weight: 800;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+
+/* gray 2 */
+
+color: #494949;
+}
+
+/*************
+*************
+end About Us
+**************
+**************/
+
+
+
+@media (max-width: 1400px){
+    header.header .ImagePart img{
+        width: 75% ;
+    }
+    header.header .ImagePart .pinkRectangle {
+        background: #C5B2A3;
+        position: absolute;
+        width: 60%;
+        height: 130px;
+        bottom: 4%;
+    
+        left: 10%;
+    
+    }
+    header.header  .blueRectangle{
+        left: 20%;
+        width: 200px;
+    }
+}
