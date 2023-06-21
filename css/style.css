@@ -307,8 +307,15 @@ section.Partners .card .card-body a {
     color: #494949;
     background-color: transparent;
     border: none;
+    box-shadow: none;
 }
+section.Partners .card .card-body a img{
+    transition: transform .7s ease-in-out;
 
+}
+section.Partners .card .card-body a:hover img{
+    transform: rotate(-360deg);
+}
 /*************
 *************
 End Our Partners
@@ -564,7 +571,9 @@ End Footer
     section.Documentations .IMGPart img, section.ArtSection .IMGPart img, section.Research .IMGPart img{
         width: 50% ;
     }
-   
+    section.Partners .card .card-body a img{
+        width: 40px;
+    }
   }
 
 
@@ -586,15 +595,26 @@ End Footer
     section.AboutUs a.ServicesLink,section.AboutUs .ImgRow{
         margin-top: 0px !important;
     }
-    section.Partners .card .card-body .card-title {
-        font-size: 25px;
-    }
+
     section.Documentations .Values .ParaTitle, section.ArtSection .Values .ParaTitle, section.Research .Values .ParaTitle{
         font-size: 25px;
     }
     nav.navbar .navbar-collapse .navbar-nav .nav-link {
         font-size: 25px;
         margin-bottom: 45px;
+    }
+    section.Partners .card .card-body a {
+        font-size: 24px;
+    }
+    section.Partners .card .card-body .card-text {
+        font-size: 17px;
+        line-height: 22px;
+    }
+    section.Partners .card .card-body .card-title {
+        font-size: 30px;
+    }
+    section.Partners .card .card-body a img{
+        width: unset;
     }
   }
   
