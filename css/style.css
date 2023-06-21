@@ -60,7 +60,12 @@ nav.navbar .form-select {
 nav.navbar .form-select option {
     color: black;
 }
-
+nav.navbar .navbar-toggler {
+    color: white;
+    border: none;
+    box-shadow: none;
+    font-size: 24px;
+}
 /*************
 *************
 End Navar
@@ -332,7 +337,7 @@ section.Documentations p.Paragraph,section.Documentations .Services ul li,sectio
 
 section.Documentations .TopPart p.Paragraph ,section.ArtSection .TopPart p.Paragraph,section.Research .TopPart p.Paragraph{
     width: 75%;
-    padding-left: 0px;
+    padding-right: 0px;
     text-align: center;
 
 }
@@ -458,3 +463,138 @@ End Footer
         width: 200px;
     }
 }
+@media (max-width: 1200px) {
+    header.header .blueRectangle{
+        display: none;
+    }
+    header.header{
+        height: unset;
+    }
+    header.header .HeaderText{
+        align-items: center !important;
+    }
+  
+    header.header .HeaderText h1,header.header .HeaderText h2{
+        text-align: center;
+    }
+    section.AboutUs p{
+        width: 75% !important;
+    }
+    section.AboutUs .TwoImageAboutUs{
+        flex-direction: row !important;
+        margin-bottom: 25px;
+    }
+    section.AboutUs .TwoImageAboutUs div{
+        width: 50%;
+    }
+    section.AboutUs .TwoImageAboutUs div img{
+        width: 97% !important;
+    }
+    section.AboutUs .TwoImageAboutUs div.secondImg img{
+        float: left;
+    }
+}
+
+@media (max-width: 991px) {
+    nav.navbar .navbar-collapse .navbar-nav .nav-link {
+        font-size: 35px;
+        margin-bottom: 65px;
+        margin-left: 0px;
+    }
+    .navbar-nav {
+       
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    nav.navbar .navbar-collapse .navbar-nav .nav-link.active .roundedActiveLink, nav.navbar .navbar-collapse .navbar-nav .nav-link:hover .roundedActiveLink {
+        width: 15px;
+        height: 15px;
+        bottom: -50%;
+    }
+    nav.navbar  .sideNavButtons,   nav.navbar  .navbar-brand{
+        z-index: 10000;
+    }
+    nav.navbar  .navbar-collapse {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        background-color: black;
+        transform: translate(-50%,-50%);
+        width: 100vw;
+    }
+    section.Documentations .IMGPart img, section.ArtSection .IMGPart img, section.Research .IMGPart img{
+        width: 75% ;
+    }
+    footer.footer .FooterRow{
+        flex-direction: column;
+    }
+    footer.footer .footerItem{
+        margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    nav.navbar .navbar-collapse .navbar-nav .nav-link {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+   
+    header.header .HeaderText h1{
+        font-size: 41px;
+    }
+    
+    section.AboutUs p{
+        width: 100% !important;
+    }
+   
+    section.Partners .card .card-body .card-text{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    section.Partners .card .card-body a{
+        font-size: 18px;
+    }
+    section.Partners .card .card-body .card-title {
+    font-size: 30px;
+    }
+    section.Partners .card .card-body hr{
+        margin: 5px 0px;
+    }
+    section.Documentations .IMGPart img, section.ArtSection .IMGPart img, section.Research .IMGPart img{
+        width: 50% ;
+    }
+   
+  }
+
+
+  @media (max-width: 575px) {
+    header.header .HeaderText h1 {
+    font-size: 37px;
+    line-height: 50px;
+    }
+    header.header .HeaderText h2{
+        font-size: 18px;
+    }
+    section.AboutUs .Title, section.Sponsers .Title{
+        font-size: 40px;
+    }
+    section.AboutUs p,section.Documentations p.Paragraph, section.Documentations .Services ul li, section.ArtSection p.Paragraph, section.ArtSection .Services ul li, section.Research p.Paragraph, section.Research .Services ul li{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    section.AboutUs a.ServicesLink,section.AboutUs .ImgRow{
+        margin-top: 0px !important;
+    }
+    section.Partners .card .card-body .card-title {
+        font-size: 25px;
+    }
+    section.Documentations .Values .ParaTitle, section.ArtSection .Values .ParaTitle, section.Research .Values .ParaTitle{
+        font-size: 25px;
+    }
+    nav.navbar .navbar-collapse .navbar-nav .nav-link {
+        font-size: 25px;
+        margin-bottom: 45px;
+    }
+  }
+  
