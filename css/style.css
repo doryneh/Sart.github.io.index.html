@@ -66,6 +66,10 @@ nav.navbar .navbar-toggler {
     box-shadow: none;
     font-size: 24px;
 }
+nav.navbar .sideNavButtons select{
+    opacity: 0;
+    visibility: hidden;
+}
 /*************
 *************
 End Navar
@@ -169,6 +173,8 @@ header.header .ImagePart {
 header.header .ImagePart img {
     z-index: 100;
     width: 90%;
+    z-index: 2050;
+
 }
 
 header.header .ImagePart .pinkRectangle {
@@ -189,7 +195,7 @@ header.header .blueRectangle {
     height: 95%;
     top: 0%;
     left: 15%;
-    z-index: 10;
+    z-index: 2000;
 }
 
 /*************
@@ -222,6 +228,7 @@ section.AboutUs p {
     line-height: 24px;
     text-align: center;
     color: #494949;
+    width: 66%;
 }
 
 section.AboutUs a.ServicesLink {
@@ -282,6 +289,7 @@ section.Partners .card .card-body .card-title {
     font-size: 36px;
     line-height: 44px;
     color: #131313;
+    padding-right: 20%;
 }
 
 section.Partners .card .card-body .card-text {
@@ -293,8 +301,8 @@ section.Partners .card .card-body .card-text {
 }
 
 section.Partners .card .card-body hr {
-    background-color: #DADADA;
-    border: 1px solid #DADADA;
+    background-color: #b7b7b7;
+    border: 1px solid #b7b7b7;
 
     margin: 30px 0px;
 
@@ -379,14 +387,14 @@ section.Sponsers{
 section.Sponsers .Pattern1{
     position: absolute;
     top: -20%;
-    right: -10%;
+    right: -2%;
     z-index: 0;
 
 }
 section.Sponsers .Pattern2{
     position: absolute;
     top: -20%;
-    left: -10%;
+    left: -2%;
     z-index: 0;
 }
 section.Sponsers .SponsersImg {
@@ -400,6 +408,9 @@ section.Sponsers .SponserDiv {
 }
 section.Sponsers .SponserDiv img{
     width: 50%;
+}
+section.Sponsers .SponserDiv.AnovaImg img{
+    width: 80%;
 }
 /*************
 *************
@@ -433,6 +444,7 @@ footer.footer a:hover{
 }
 footer.footer .socialMedia a{
     font-size: 24px;
+    color: #C5B2A3;
 } 
 footer.footer .socialMedia a:hover{
     transform: scale(1.2);
@@ -442,7 +454,13 @@ footer.footer .socialMedia a:hover{
 End Footer
 **************
 **************/
+.BackImg{
+    z-index: 0 !important;
+}
 
+h1,h2,p,a{
+    z-index: 1000;
+}
 
 /***************************************************************************************
 ****************************************************************************************
@@ -452,7 +470,7 @@ End Footer
 
 @media (max-width: 1400px) {
     header.header .ImagePart img {
-        width: 75%;
+        width:70%;
     }
 
     header.header .ImagePart .pinkRectangle {
@@ -466,7 +484,7 @@ End Footer
     }
 
     header.header .blueRectangle {
-        left: 20%;
+        left: 14%;
         width: 200px;
     }
 }
