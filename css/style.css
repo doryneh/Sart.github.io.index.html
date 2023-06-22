@@ -26,7 +26,9 @@ nav.navbar .navbar-collapse .navbar-nav .nav-link {
     line-height: 24px;
 
 }
-
+nav.navbar .navbar-collapse .navbar-nav .nav-link.active{
+    font-weight: 600;
+}
 nav.navbar .navbar-collapse .navbar-nav .nav-link.active, nav.navbar .navbar-collapse .navbar-nav .nav-link:hover, nav.navbar .form-select:hover {
     color: white;
     font-weight: 600;
@@ -462,12 +464,61 @@ h1,h2,p,a{
     z-index: 1000;
 }
 
+
+/*********************
+*********************
+Animation
+*********************
+*********************/
+
+.PinkSeperator, .RoundedImageCarousel, .Cards3Part, .ProductCarouse, .whyUs, .youNeedHelp, .AnimatedRow {
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 0.5s all ease;
+}
+
+.PinkSeperator.active, .RoundedImageCarousel.active, .Cards3Part.active, .ProductCarouse.active, .whyUs.active, .youNeedHelp.active, .FooterCards.active, .FooterServices.active, .AnimatedRow.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.FooterCards, .FooterServices {
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+
+.NoBigAnim {
+    transform: translateX(0px) !important;
+    opacity: 1;
+    transition: none;
+}
+
+/*********************
+*********************
+End Animation
+*********************
+*********************/ 
+
+
+
 /***************************************************************************************
 ****************************************************************************************
 *********************************************** Media***********************************
 ****************************************************************************************
 ****************************************************************************************/
+@media (min-width: 1400px){
 
+    header.header .blueRectangle {
+        left: 14%;
+        width: 200px;
+    }
+    header.header .ImagePart img{
+        width: 75%;
+    }
+}
 @media (max-width: 1400px) {
     header.header .ImagePart img {
         width:70%;
@@ -482,15 +533,25 @@ h1,h2,p,a{
 
 
     }
-
+    
     header.header .blueRectangle {
-        left: 14%;
+        left: 15%;
         width: 200px;
     }
+
 }
 @media (max-width: 1200px) {
     header.header .blueRectangle{
         display: none;
+    }
+    div#navbarNavDropdown{
+        justify-content: center !important;
+    }
+    header.header .ImagePart img{
+        z-index: 100;
+    }
+    nav.navbar .form-select{
+        z-index: 20000;
     }
     header.header{
         height: unset;
@@ -522,8 +583,8 @@ h1,h2,p,a{
 
 @media (max-width: 991px) {
     nav.navbar .navbar-collapse .navbar-nav .nav-link {
-        font-size: 35px;
-        margin-bottom: 65px;
+        font-size: 30px;
+        margin-bottom: 40px;
         margin-left: 0px;
     }
     .navbar-nav {
@@ -633,6 +694,10 @@ h1,h2,p,a{
     }
     section.Partners .card .card-body a img{
         width: unset;
+    }
+    section.Partners .card {
+        width: 75%;
+        margin: auto;
     }
   }
   
