@@ -505,7 +505,7 @@ Animation
 .scroller section {
   scroll-snap-align: start;
 } */
-.AboutUs .BigImg img, .AboutUs .TwoImageAboutUs .One,section.Sponsers .Title ,section.Sponsers img,.Values .ParaTitle,.ArtSection  .TopPart,.Research .TopPart,.Research .IMGPart,.ArtSection .IMGPart, .Values .Paragraph,.Documentations .Values .Services ul,.Documentations .TopPart, .Documentations .IMGPart, section.Partners, section.Partners .card, .BackImg, .AboutUs .TextRow a, .AboutUs .TextRow p, .AboutUs .TwoImageAboutUs .Two, .AboutUs .TextRow .Title {
+.AboutUs .BigImg img, .AboutUs .TwoImageAboutUs .One,.footer .FooterRow p,.footer .FooterRow .socialMedia a,.footer .FooterRow img ,.footer .FooterRow a,section.Sponsers .Title ,section.Sponsers img,.Values .ParaTitle,.ArtSection  .TopPart,.Research .TopPart,.Research .IMGPart,.ArtSection .IMGPart, .Values .Paragraph,.Documentations .Values .Services ul,.Documentations .TopPart, .Documentations .IMGPart, section.Partners, section.Partners .card, .BackImg, .AboutUs .TextRow a, .AboutUs .TextRow p, .AboutUs .TwoImageAboutUs .Two, .AboutUs .TextRow .Title {
     position: relative;
     opacity: 0;
 }
@@ -524,7 +524,18 @@ Animation
     transition: 3.5s ease all;
     transform: translateX(150px);
 }
-
+.footer .FooterRow img, .footer .FooterRow a{
+    transform: translateX(150%);
+    transition: 1.5s ease all;
+}
+.footer .FooterRow .socialMedia a,.footer .FooterRow p{
+    transform: translateX(-150%);
+    transition: 2.5s ease all;
+}
+.footer.active .FooterRow img, .footer.active .FooterRow a,.footer.active .FooterRow .socialMedia a,.footer.active .FooterRow p{
+    transform: translateX(0);
+    opacity: 1;
+}
 section.Partners {
     transform: translateY(-150px);
     transition: 0.5s ease all;
