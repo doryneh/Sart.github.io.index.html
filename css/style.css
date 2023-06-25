@@ -6,6 +6,8 @@
 body {
     direction: rtl;
     font-family: HT;
+    overflow-x: hidden;
+
 }
 
 
@@ -26,12 +28,13 @@ nav.navbar .navbar-collapse .navbar-nav .nav-link {
     line-height: 24px;
 
 }
-nav.navbar .navbar-collapse .navbar-nav .nav-link.active{
+
+nav.navbar .navbar-collapse .navbar-nav .nav-link.active {
     font-weight: 600;
 }
+
 nav.navbar .navbar-collapse .navbar-nav .nav-link.active, nav.navbar .navbar-collapse .navbar-nav .nav-link:hover, nav.navbar .form-select:hover {
     color: white;
-    font-weight: 600;
     position: relative;
     cursor: pointer;
 }
@@ -62,16 +65,19 @@ nav.navbar .form-select {
 nav.navbar .form-select option {
     color: black;
 }
+
 nav.navbar .navbar-toggler {
     color: white;
     border: none;
     box-shadow: none;
     font-size: 24px;
 }
-nav.navbar .sideNavButtons select{
+
+nav.navbar .sideNavButtons select {
     opacity: 0;
     visibility: hidden;
 }
+
 /*************
 *************
 End Navar
@@ -215,7 +221,7 @@ section.AboutUs {
     position: relative;
 }
 
-section.AboutUs .Title,section.Sponsers .Title {
+section.AboutUs .Title, section.Sponsers .Title {
     font-weight: 900;
     font-size: 48px;
     line-height: 59px;
@@ -319,13 +325,16 @@ section.Partners .card .card-body a {
     border: none;
     box-shadow: none;
 }
-section.Partners .card .card-body a img{
+
+section.Partners .card .card-body a img {
     transition: transform .7s ease-in-out;
 
 }
-section.Partners .card .card-body a:hover img{
+
+section.Partners .card .card-body a:hover img {
     transform: rotate(-360deg);
 }
+
 /*************
 *************
 End Our Partners
@@ -338,11 +347,11 @@ End Our Partners
 Documentations
 **************
 **************/
-section.Documentations .IMGPart img ,section.ArtSection .IMGPart img,section.Research .IMGPart img  {
+section.Documentations .IMGPart img, section.ArtSection .IMGPart img, section.Research .IMGPart img {
     width: 100%;
 }
 
-section.Documentations p.Paragraph,section.Documentations .Services ul li,section.ArtSection  p.Paragraph,section.ArtSection .Services ul li,section.Research  p.Paragraph,section.Research .Services ul li {
+section.Documentations p.Paragraph, section.Documentations .Services ul li, section.ArtSection p.Paragraph, section.ArtSection .Services ul li, section.Research p.Paragraph, section.Research .Services ul li {
     font-weight: 800;
     font-size: 20px;
     line-height: 24px;
@@ -352,26 +361,29 @@ section.Documentations p.Paragraph,section.Documentations .Services ul li,sectio
 
 }
 
-section.Documentations .TopPart p.Paragraph ,section.ArtSection .TopPart p.Paragraph,section.Research .TopPart p.Paragraph{
+section.Documentations .TopPart p.Paragraph, section.ArtSection .TopPart p.Paragraph, section.Research .TopPart p.Paragraph {
     width: 75%;
     padding-right: 0px;
     text-align: center;
 
 }
 
-section.Documentations .Values .ParaTitle,section.ArtSection .Values .ParaTitle ,section.Research .Values .ParaTitle {
+section.Documentations .Values .ParaTitle, section.ArtSection .Values .ParaTitle, section.Research .Values .ParaTitle {
     font-weight: 800;
     font-size: 32px;
     line-height: 150%;
     text-align: right;
 }
-section.Documentations .Services ul,section.ArtSection .Services ul,section.Research .Services ul {
+
+section.Documentations .Services ul, section.ArtSection .Services ul, section.Research .Services ul {
     padding-right: 70px;
 
 }
-section.Documentations .Services ul li ,section.ArtSection .Services ul li,section.Research .Services ul li{
+
+section.Documentations .Services ul li, section.ArtSection .Services ul li, section.Research .Services ul li {
     padding-right: 0px;
 }
+
 /*************
 *************
 End Documentations
@@ -383,37 +395,44 @@ End Documentations
 Sponsers
 **************
 **************/
-section.Sponsers{
+section.Sponsers {
     overflow-x: hidden;
 }
-section.Sponsers .Pattern1{
+
+section.Sponsers .Pattern1 {
     position: absolute;
     top: -20%;
     right: -2%;
     z-index: 0;
 
 }
-section.Sponsers .Pattern2{
+
+section.Sponsers .Pattern2 {
     position: absolute;
     top: -20%;
     left: -2%;
     z-index: 0;
 }
+
 section.Sponsers .SponsersImg {
     z-index: 100;
     position: relative;
 }
+
 section.Sponsers .SponserDiv {
-   display: flex;
-   justify-content: center;
-   align-items: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-section.Sponsers .SponserDiv img{
+
+section.Sponsers .SponserDiv img {
     width: 50%;
 }
-section.Sponsers .SponserDiv.AnovaImg img{
+
+section.Sponsers .SponserDiv.AnovaImg img {
     width: 80%;
 }
+
 /*************
 *************
 End Sponsers
@@ -426,41 +445,47 @@ End Sponsers
 Footer
 **************
 **************/
-footer.footer{
+footer.footer {
     background-color: black;
 }
-footer.footer img{
+
+footer.footer img {
     width: 150px;
 }
-footer.footer a ,footer.footer p {
+
+footer.footer a, footer.footer p {
     font-weight: 800;
-font-size: 20px;
-line-height: 150%;
-text-align: center;
-color: #FFFFFF;
-text-decoration: none;
-transition: 0.3s ease all;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: 0.3s ease all;
 }
-footer.footer a:hover{
+
+footer.footer a:hover {
     color: #dddddd;
 }
-footer.footer .socialMedia a{
+
+footer.footer .socialMedia a {
     font-size: 24px;
     color: #C5B2A3;
-} 
-footer.footer .socialMedia a:hover{
+}
+
+footer.footer .socialMedia a:hover {
     transform: scale(1.2);
 }
+
 /*************
 *************
 End Footer
 **************
 **************/
-.BackImg{
+.BackImg {
     z-index: 0 !important;
 }
 
-h1,h2,p,a{
+h1, h2, p, a {
     z-index: 1000;
 }
 
@@ -470,26 +495,161 @@ h1,h2,p,a{
 Animation
 *********************
 *********************/
-
-.PinkSeperator, .RoundedImageCarousel, .Cards3Part, .ProductCarouse, .whyUs, .youNeedHelp, .AnimatedRow {
-    position: relative;
-    transform: translateX(150px);
-    opacity: 0;
-    transition: 0.5s all ease;
+/* .scroller {
+    overflow-x: hidden;
+  height: 100vh !important;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
-.PinkSeperator.active, .RoundedImageCarousel.active, .Cards3Part.active, .ProductCarouse.active, .whyUs.active, .youNeedHelp.active, .FooterCards.active, .FooterServices.active, .AnimatedRow.active {
+.scroller section {
+  scroll-snap-align: start;
+} */
+.AboutUs .BigImg img, .AboutUs .TwoImageAboutUs .One,section.Sponsers .Title ,section.Sponsers img,.Values .ParaTitle,.ArtSection  .TopPart,.Research .TopPart,.Research .IMGPart,.ArtSection .IMGPart, .Values .Paragraph,.Documentations .Values .Services ul,.Documentations .TopPart, .Documentations .IMGPart, section.Partners, section.Partners .card, .BackImg, .AboutUs .TextRow a, .AboutUs .TextRow p, .AboutUs .TwoImageAboutUs .Two, .AboutUs .TextRow .Title {
+    position: relative;
+    opacity: 0;
+}
+.Values .ParaTitle {
+    transition: 1.5s ease all;
+    transform: translateX(150px);
+}
+.Values.active .ParaTitle, .Values.active .Paragraph, .Values.active .Services ul{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.Values .Services ul{
+    opacity: 0;
+}
+ .Values .Paragraph, .Values .Services ul{
+    transition: 3.5s ease all;
+    transform: translateX(150px);
+}
+
+section.Partners {
+    transform: translateY(-150px);
+    transition: 0.5s ease all;
+}
+
+.Documentations .TopPart, .Documentations .IMGPart,.ArtSection .TopPart, .ArtSection .IMGPart ,.Research .TopPart,.Research .IMGPart {
+    transition: 1.5s ease all;
+}
+.Documentations .TopPart{
+    transform: translateX(-150%);
+
+}
+.ArtSection .TopPart,.Research .TopPart{
+    transform: translateY(150%);
+}
+.ArtSection.active .TopPart,.Research.active .TopPart{
+    transform: translateX(0);
+    opacity: 1;
+
+}
+.ArtSection .IMGPart {
+    transform: translateX(-150%);
+
+}
+.Documentations .IMGPart,.Research .IMGPart {
+    transform: translateX(150%);
+
+}
+.Documentations.active .TopPart,.Documentations.active .IMGPart,.ArtSection.active .IMGPart,.Research.active .IMGPart{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+
+section.Partners .card {
+    transform: translateY(150%);
+    transition: 2s ease all;
+
+}
+
+section.Partners.active .card {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+section.Partners.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.BigImg img {
+    transform: translateX(-150%);
+    transition: 3.5s ease all;
+}
+
+.BackImg {
+    transition: 3s ease all;
+}
+
+.active .BackImg {
+    transform: rotate(360deg);
+    opacity: 1;
+}
+
+.active .BigImg img, .active .TwoImageAboutUs .One {
     transform: translateX(0);
     opacity: 1;
 }
 
-.FooterCards, .FooterServices {
-    position: relative;
-    transform: translateX(150px);
-    opacity: 0;
-    transition: 1.5s all ease;
+.TwoImageAboutUs .One {
+    transform: translateX(150%);
+    transition: 3s ease all;
+
 }
 
+section.AboutUs a.ServicesLink {
+    transform: translateY(150%);
+    transition: 5s ease all;
+    opacity: 0;
+}
+
+.TwoImageAboutUs .Two {
+    transform: translateY(150%);
+    transition: 4s ease all;
+}
+
+.active .TwoImageAboutUs .Two, .AboutUs.active .TextRow a {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.AboutUs .TextRow .Title {
+    transform: translate(-150%, 150%);
+    transition: 4s ease all;
+}
+
+.AboutUs.active .TextRow .Title {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.AboutUs .TextRow p {
+    transform: translate(-150%, 150%);
+    opacity: 0;
+    transition: 5s ease all;
+}
+
+.AboutUs.active .TextRow p {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+section.Sponsers .Title ,section.Sponsers img {
+    transform: translateY(150%);
+
+}
+section.Sponsers .Title{
+    transition: 1s ease all;
+}
+section.Sponsers img{
+    transition:2s ease all ;
+}
+section.Sponsers.active .Title ,section.Sponsers.active img{
+    transform: translateY(0);
+    opacity: 1;
+}
 .NoBigAnim {
     transform: translateX(0px) !important;
     opacity: 1;
@@ -500,7 +660,7 @@ Animation
 *********************
 End Animation
 *********************
-*********************/ 
+*********************/
 
 
 
@@ -509,19 +669,21 @@ End Animation
 *********************************************** Media***********************************
 ****************************************************************************************
 ****************************************************************************************/
-@media (min-width: 1400px){
+@media (min-width: 1400px) {
 
     header.header .blueRectangle {
         left: 14%;
         width: 200px;
     }
-    header.header .ImagePart img{
+
+    header.header .ImagePart img {
         width: 75%;
     }
 }
+
 @media (max-width: 1400px) {
     header.header .ImagePart img {
-        width:70%;
+        width: 70%;
     }
 
     header.header .ImagePart .pinkRectangle {
@@ -533,50 +695,61 @@ End Animation
 
 
     }
-    
+
     header.header .blueRectangle {
         left: 15%;
         width: 200px;
     }
 
 }
+
 @media (max-width: 1200px) {
-    header.header .blueRectangle{
+    header.header .blueRectangle {
         display: none;
     }
-    div#navbarNavDropdown{
+
+    div#navbarNavDropdown {
         justify-content: center !important;
     }
-    header.header .ImagePart img{
+
+    header.header .ImagePart img {
         z-index: 100;
     }
-    nav.navbar .form-select{
+
+    nav.navbar .form-select {
         z-index: 20000;
     }
-    header.header{
+
+    header.header {
         height: unset;
     }
-    header.header .HeaderText{
+
+    header.header .HeaderText {
         align-items: center !important;
     }
-  
-    header.header .HeaderText h1,header.header .HeaderText h2{
+
+    header.header .HeaderText h1, header.header .HeaderText h2 {
         text-align: center;
     }
-    section.AboutUs p{
+
+    section.AboutUs p {
         width: 75% !important;
     }
-    section.AboutUs .TwoImageAboutUs{
+
+    section.AboutUs .TwoImageAboutUs {
         flex-direction: row !important;
         margin-bottom: 25px;
     }
-    section.AboutUs .TwoImageAboutUs div{
+
+    section.AboutUs .TwoImageAboutUs div {
         width: 50%;
     }
-    section.AboutUs .TwoImageAboutUs div img{
+
+    section.AboutUs .TwoImageAboutUs div img {
         width: 97% !important;
     }
-    section.AboutUs .TwoImageAboutUs div.secondImg img{
+
+    section.AboutUs .TwoImageAboutUs div.secondImg img {
         float: left;
     }
 }
@@ -587,117 +760,138 @@ End Animation
         margin-bottom: 40px;
         margin-left: 0px;
     }
+
     .navbar-nav {
-       
+
         height: 100vh;
         justify-content: center;
         align-items: center;
     }
+
     nav.navbar .navbar-collapse .navbar-nav .nav-link.active .roundedActiveLink, nav.navbar .navbar-collapse .navbar-nav .nav-link:hover .roundedActiveLink {
         width: 15px;
         height: 15px;
         bottom: -50%;
     }
-    nav.navbar  .sideNavButtons,   nav.navbar  .navbar-brand{
+
+    nav.navbar .sideNavButtons, nav.navbar .navbar-brand {
         z-index: 10000;
     }
-    nav.navbar  .navbar-collapse {
+
+    nav.navbar .navbar-collapse {
         position: fixed;
         top: 50%;
         left: 50%;
         background-color: black;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         width: 100vw;
     }
-    section.Documentations .IMGPart img, section.ArtSection .IMGPart img, section.Research .IMGPart img{
-        width: 75% ;
+
+    section.Documentations .IMGPart img, section.ArtSection .IMGPart img, section.Research .IMGPart img {
+        width: 75%;
     }
-    footer.footer .FooterRow{
+
+    footer.footer .FooterRow {
         flex-direction: column;
     }
-    footer.footer .footerItem{
+
+    footer.footer .footerItem {
         margin-bottom: 10px;
     }
-  }
+}
 
-  @media (max-width: 767px) {
+@media (max-width: 767px) {
     nav.navbar .navbar-collapse .navbar-nav .nav-link {
         font-size: 30px;
         margin-bottom: 40px;
     }
-   
-    header.header .HeaderText h1{
+
+    header.header .HeaderText h1 {
         font-size: 41px;
     }
-    
-    section.AboutUs p{
+
+    section.AboutUs p {
         width: 100% !important;
     }
-   
-    section.Partners .card .card-body .card-text{
+
+    section.Partners .card .card-body .card-text {
         font-size: 13px;
         line-height: 20px;
     }
-    section.Partners .card .card-body a{
+
+    section.Partners .card .card-body a {
         font-size: 18px;
     }
+
     section.Partners .card .card-body .card-title {
-    font-size: 30px;
+        font-size: 30px;
     }
-    section.Partners .card .card-body hr{
+
+    section.Partners .card .card-body hr {
         margin: 5px 0px;
     }
-    section.Documentations .IMGPart img, section.ArtSection .IMGPart img, section.Research .IMGPart img{
-        width: 50% ;
+
+    section.Documentations .IMGPart img, section.ArtSection .IMGPart img, section.Research .IMGPart img {
+        width: 50%;
     }
-    section.Partners .card .card-body a img{
+
+    section.Partners .card .card-body a img {
         width: 40px;
     }
-  }
+}
 
 
-  @media (max-width: 575px) {
+@media (max-width: 575px) {
     header.header .HeaderText h1 {
-    font-size: 37px;
-    line-height: 50px;
+        font-size: 37px;
+        line-height: 50px;
     }
-    header.header .HeaderText h2{
+
+    header.header .HeaderText h2 {
         font-size: 18px;
     }
-    section.AboutUs .Title, section.Sponsers .Title{
+
+    section.AboutUs .Title, section.Sponsers .Title {
         font-size: 40px;
     }
-    section.AboutUs p,section.Documentations p.Paragraph, section.Documentations .Services ul li, section.ArtSection p.Paragraph, section.ArtSection .Services ul li, section.Research p.Paragraph, section.Research .Services ul li{
+
+    section.AboutUs p, section.Documentations p.Paragraph, section.Documentations .Services ul li, section.ArtSection p.Paragraph, section.ArtSection .Services ul li, section.Research p.Paragraph, section.Research .Services ul li {
         font-size: 15px;
         line-height: 20px;
     }
-    section.AboutUs a.ServicesLink,section.AboutUs .ImgRow{
+
+    section.AboutUs a.ServicesLink, section.AboutUs .ImgRow {
         margin-top: 0px !important;
     }
 
-    section.Documentations .Values .ParaTitle, section.ArtSection .Values .ParaTitle, section.Research .Values .ParaTitle{
+    section.Documentations .Values .ParaTitle, section.ArtSection .Values .ParaTitle, section.Research .Values .ParaTitle {
         font-size: 25px;
     }
+
     nav.navbar .navbar-collapse .navbar-nav .nav-link {
         font-size: 25px;
         margin-bottom: 45px;
     }
+
     section.Partners .card .card-body a {
         font-size: 24px;
     }
+
     section.Partners .card .card-body .card-text {
         font-size: 17px;
         line-height: 22px;
     }
+
     section.Partners .card .card-body .card-title {
         font-size: 30px;
     }
-    section.Partners .card .card-body a img{
+
+    section.Partners .card .card-body a img {
         width: unset;
     }
+
     section.Partners .card {
         width: 75%;
         margin: auto;
     }
-  }
-  
+}
