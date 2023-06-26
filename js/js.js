@@ -4,20 +4,15 @@ $(document).ready(function () {
     $(this).addClass('active');
   });
 
-
-
   $('.nav-link').click(function () {
     if ($(window).width() < 991) {
       $('.navbar-collapse').collapse('hide');
     }
   });
 
-
-
-
   /**Animation */
   function PinkSeperatorAnim() {
-    var reveals = document.querySelectorAll(".AboutUs,.header,.Partners,.Documentations , .Values,.ArtSection,.Research,.Sponsers,.footer");
+    var reveals = document.querySelectorAll(".AboutUs,.Partners,.Documentations , .Values,.ArtSection,.Research,.Sponsers,.footer");
 
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
@@ -35,33 +30,14 @@ $(document).ready(function () {
   window.addEventListener("scroll", PinkSeperatorAnim);
 
 
-  var isScrolling = false;
 
-
-
-
-
-
-
-
-
-
+    // Add 'active' class when the screen is loaded
+    $('header.header').addClass('active');
+  
+    // Wait 4 seconds and add 'active' class again
+    setTimeout(function() {
+      $('header.header').addClass('again');
+    }, 4000);
+  
 
 });
-
-//  window.addEventListener('DOMContentLoaded', function() {
-//   var sections = document.querySelectorAll('section');
-
-//   function updateBodyHeight() {
-//     var totalHeight = 0;
-//     sections.forEach(function(section) {
-//       totalHeight += section.clientHeight;
-//     });
-//     document.body.style.height = totalHeight + 'px';
-//   }
-
-//   // Call the function initially and whenever the window is resized
-//   updateBodyHeight();
-//   window.addEventListener('resize', updateBodyHeight);
-// });
-

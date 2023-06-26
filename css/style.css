@@ -505,9 +505,77 @@ Animation
 .scroller section {
   scroll-snap-align: start;
 } */
-.AboutUs .BigImg img, .AboutUs .TwoImageAboutUs .One,.footer .FooterRow p,.footer .FooterRow .socialMedia a,.footer .FooterRow img ,.footer .FooterRow a,section.Sponsers .Title ,section.Sponsers img,.Values .ParaTitle,.ArtSection  .TopPart,.Research .TopPart,.Research .IMGPart,.ArtSection .IMGPart, .Values .Paragraph,.Documentations .Values .Services ul,.Documentations .TopPart, .Documentations .IMGPart, section.Partners, section.Partners .card, .BackImg, .AboutUs .TextRow a, .AboutUs .TextRow p, .AboutUs .TwoImageAboutUs .Two, .AboutUs .TextRow .Title {
+
+.AboutUs .BigImg img,.header .blueRectangle ,.header .pinkRectangle,.AboutUs .TwoImageAboutUs .One,.footer .FooterRow p,.footer .FooterRow .socialMedia a,.footer .FooterRow img ,.footer .FooterRow a,section.Sponsers .Title ,section.Sponsers img,.Values .ParaTitle,.ArtSection  .TopPart,.Research .TopPart,.Research .IMGPart,.ArtSection .IMGPart, .Values .Paragraph,.Documentations .Values .Services ul,.Documentations .TopPart, .Documentations .IMGPart, section.Partners, section.Partners .card, .BackImg, .AboutUs .TextRow a, .AboutUs .TextRow p, .AboutUs .TwoImageAboutUs .Two, .AboutUs .TextRow .Title {
     position: relative;
     opacity: 0;
+}
+header.header .ImagePart,.header .HeaderText{
+    opacity: 1;
+    position: relative;
+    overflow: hidden;
+}
+.header .HeaderText img{
+    width: 0px !important;
+    transition: 4s ease all;
+    transition-delay: 4s;
+    overflow-x: hidden;
+}
+header.header.active.again .MiddlePattern img,.header.header.active.again .SidePattern{
+    transform: rotate(0) !important;
+}
+.OverflowHidden{
+    overflow: hidden;
+    position: relative;
+   }
+.header .HeaderText a.ServicesLink{
+    transform: translateX(150%);
+    transition: 4s ease all !important;
+    transition-delay: 4s !important;
+}
+.header.active .HeaderText a.ServicesLink{
+    transform: translateX(0px);
+}
+.header .HeaderText h1,.header .HeaderText h2{
+    transform: translateY(250%);
+    transition: 4s ease all;
+    transition-delay: 4s;
+}
+
+.header.active .HeaderText h2,.header.active .HeaderText h1{
+   transform: translateY(0);
+   opacity: 1;
+}
+
+.header.active .HeaderText img{
+width: 25% !important;
+}
+.header .pinkRectangle{ 
+    transform: translateX(-150%);
+    transition:  4s ease all;
+    opacity: 1 !important;
+}
+
+.header .ImagePart img{
+    transform: translateX(-150%);
+    transition:  4s ease all;
+    opacity: 1;
+    transition-delay: 4s;
+
+}
+.header.active .pinkRectangle{
+    transform: translateX(0);
+}
+.header.active .ImagePart img{
+    transform: translateX(0);
+}
+.header .blueRectangle {
+    transform: translateY(-150%);
+    transition:  3s ease all;
+    opacity: 1;
+}
+.header.active .blueRectangle{
+    transform: translateY(0);
 }
 .Values .ParaTitle {
     transition: 1.5s ease all;
@@ -591,11 +659,11 @@ section.Partners.active {
     transition: 3.5s ease all;
 }
 
-.BackImg {
+.BackImg ,.header .MiddlePattern img  {
     transition: 3s ease all;
 }
 
-.active .BackImg {
+.active .BackImg,.header.active .MiddlePattern img {
     transform: rotate(360deg);
     opacity: 1;
 }
