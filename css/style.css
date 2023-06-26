@@ -967,7 +967,9 @@ End Top Animation
         font-size: 30px;
         margin-bottom: 40px;
     }
-
+    section.ContactU .formPart form{
+        width: 90%;
+    }
     header.header .HeaderText h1 {
         font-size: 41px;
     }
