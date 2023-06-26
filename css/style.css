@@ -139,7 +139,7 @@ header.header .HeaderText h2 {
     color: #DADADA;
 }
 
-header.header .HeaderText a.ServicesLink, section.AboutUs a.ServicesLink {
+header.header .HeaderText a.ServicesLink, section.AboutUs a.ServicesLink ,section.ContactU .formPart  form button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,23 +152,26 @@ header.header .HeaderText a.ServicesLink, section.AboutUs a.ServicesLink {
     text-decoration: none;
     padding: 15px 35px;
     margin-top: 20px;
-    transition: 0.3s ease all;
+    transition: 0.5s ease all;
     overflow: hidden;
+    border: none;
 }
 
-header.header .HeaderText a.ServicesLink svg {
+header.header .HeaderText a.ServicesLink svg,section.ContactU .formPart  form button svg {
     transition: 0.5s ease all;
 
 }
-
-header.header .HeaderText a:hover {
+section.ContactU .formPart  form button{
+    border: 2px solid #C5B2A3;
+}
+header.header .HeaderText a:hover,section.ContactU .formPart  form button:hover {
     background-color: white;
     color: #C5B2A3;
 
 
 }
 
-header.header .HeaderText a:hover svg {
+header.header .HeaderText a:hover svg ,section.ContactU .formPart  form button:hover  svg{
     transform: translateX(-300%);
 }
 
@@ -440,11 +443,59 @@ End Sponsers
 
 /*************
 *************
+Contact Us
+**************
+**************/
+section.ContactU .formPart h1 {
+    color: #34353A;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 150%;
+}
+
+section.ContactU .formPart h6 {
+    color:  #494949;
+    font-size: 20px;
+    font-weight: 800;
+}
+section.ContactU .formPart  form{
+    width: 75%;
+    margin-top: 30px;
+}
+section.ContactU .formPart  form label.form-label{
+    color:  #131313;
+text-align: right;
+font-size: 20px;
+font-weight: 800;
+} 
+section.ContactU .formPart  form input,section.ContactU .formPart  form  textarea{
+    padding: 24px 16px;
+    border-radius: 8px;
+    border: 1px solid  #DBDBDB;
+    direction: rtl;
+    font-size: 16px;
+font-weight: 900;
+box-shadow: none;
+}
+/*************
+*************
+End Contact Us
+**************
+**************/
+
+
+/*************
+*************
 Footer
 **************
 **************/
 footer.footer {
     background-color: black;
+    overflow-x: hidden;
+}
+
+.container {
+    overflow-x: hidden;
 }
 
 footer.footer img {
@@ -495,133 +546,159 @@ Animation Top
 *********************/
 
 
-.AboutUs .BigImg img,.header .blueRectangle ,.header .pinkRectangle,.AboutUs .TwoImageAboutUs .One,.footer .FooterRow p,.footer .FooterRow .socialMedia a,.footer .FooterRow img ,.footer .FooterRow a,section.Sponsers .Title ,section.Sponsers img,.Values .ParaTitle,.ArtSection  .TopPart,.Research .TopPart,.Research .IMGPart,.ArtSection .IMGPart, .Values .Paragraph,.Documentations .Values .Services ul,.Documentations .TopPart, .Documentations .IMGPart, section.Partners, section.Partners .card, .BackImg, .AboutUs .TextRow a, .AboutUs .TextRow p, .AboutUs .TwoImageAboutUs .Two, .AboutUs .TextRow .Title {
+.AboutUs .BigImg img, .header .blueRectangle, .header .pinkRectangle, .AboutUs .TwoImageAboutUs .One, .footer .FooterRow p, .footer .FooterRow .socialMedia a, .footer .FooterRow img, .footer .FooterRow a, section.Sponsers .Title, section.Sponsers img, .Values .ParaTitle, .ArtSection .TopPart, .Research .TopPart, .Research .IMGPart, .ArtSection .IMGPart, .Values .Paragraph, .Documentations .Values .Services ul, .Documentations .TopPart, .Documentations .IMGPart, section.Partners, section.Partners .card, .BackImg, .AboutUs .TextRow a, .AboutUs .TextRow p, .AboutUs .TwoImageAboutUs .Two, .AboutUs .TextRow .Title {
     position: relative;
     opacity: 0;
 }
-header.header .ImagePart,.header .HeaderText{
+
+header.header .ImagePart, .header .HeaderText {
     opacity: 1;
     position: relative;
     overflow: hidden;
 }
-.header .HeaderText img{
+
+.header .HeaderText img {
     width: 0px !important;
     transition: 4s ease all;
     transition-delay: 4s;
     overflow-x: hidden;
 }
-header.header.active.again .MiddlePattern img,.header.header.active.again .SidePattern{
-    transform: rotate(0) !important;
+
+header.header.active.again .MiddlePattern img, .header.header.active.again .SidePattern {
+    transform: rotate(360deg) !important;
 }
-.OverflowHidden{
+
+.OverflowHidden {
     overflow: hidden;
     position: relative;
-   }
-.header .HeaderText a.ServicesLink{
+}
+
+.header .HeaderText a.ServicesLink {
     transform: translateX(150%);
     transition: 4s ease all !important;
     transition-delay: 4s !important;
 }
-.header.active .HeaderText a.ServicesLink{
+
+.header.active .HeaderText a.ServicesLink {
     transform: translateX(0px);
 }
-.header .HeaderText h1,.header .HeaderText h2{
+
+.header .HeaderText h1, .header .HeaderText h2 {
     transform: translateY(400%);
     transition: 4s ease all;
     transition-delay: 4s;
 }
 
-.header.active .HeaderText h2,.header.active .HeaderText h1{
-   transform: translateY(0);
-   opacity: 1;
+.header.active .HeaderText h2, .header.active .HeaderText h1 {
+    transform: translateY(0);
+    opacity: 1;
 }
 
-.header.active .HeaderText img{
-width: 25% !important;
+.header.active .HeaderText img {
+    width: 25% !important;
 }
-.header .pinkRectangle{ 
+
+.header .pinkRectangle {
     transform: translateX(-150%);
-    transition:  4s ease all;
+    transition: 4s ease all;
     opacity: 1 !important;
 }
 
-.header .ImagePart img{
+.header .ImagePart img {
     transform: translateX(-150%);
-    transition:  4s ease all;
+    transition: 4s ease all;
     opacity: 1;
     transition-delay: 4s;
 
 }
-.header.active .pinkRectangle{
+
+.header.active .pinkRectangle {
     transform: translateX(0);
 }
-.header.active .ImagePart img{
+
+.header.active .ImagePart img {
     transform: translateX(0);
 }
+
 .header .blueRectangle {
     transform: translateY(-150%);
-    transition:  3s ease all;
+    transition: 3s ease all;
     opacity: 1;
 }
-.header.active .blueRectangle{
+
+.header.active .blueRectangle {
     transform: translateY(0);
 }
+
 .Values .ParaTitle {
     transition: 1.5s ease all;
     transform: translateX(150px);
 }
-.Values.active .ParaTitle, .Values.active .Paragraph, .Values.active .Services ul{
+
+.Values.active .ParaTitle, .Values.active .Paragraph, .Values.active .Services ul {
     transform: translateX(0px);
     opacity: 1;
 }
-.Values .Services ul{
+
+.Values .Services ul {
     opacity: 0;
 }
- .Values .Paragraph, .Values .Services ul{
+
+.Values .Paragraph, .Values .Services ul {
     transition: 3.5s ease all;
     transform: translateX(150px);
 }
-.footer .FooterRow img, .footer .FooterRow a{
+
+.footer .FooterRow img, .footer .FooterRow a {
     transform: translateX(150%);
     transition: 1.5s ease all;
 }
-.footer .FooterRow .socialMedia a,.footer .FooterRow p{
+
+.footer .FooterRow .socialMedia a, .footer .FooterRow p {
     transform: translateX(-150%);
     transition: 2.5s ease all;
 }
-.footer.active .FooterRow img, .footer.active .FooterRow a,.footer.active .FooterRow .socialMedia a,.footer.active .FooterRow p{
+
+.footer.active .FooterRow img, .footer.active .FooterRow a, .footer.active .FooterRow .socialMedia a, .footer.active .FooterRow p {
     transform: translateX(0);
     opacity: 1;
 }
+
 section.Partners {
     transform: translateY(-150px);
     transition: 0.5s ease all;
 }
 
-.Documentations .TopPart, .Documentations .IMGPart,.ArtSection .TopPart, .ArtSection .IMGPart ,.Research .TopPart,.Research .IMGPart {
+.Documentations .TopPart, .Documentations .IMGPart, .ArtSection .TopPart, .ArtSection .IMGPart, .Research .TopPart, .Research .IMGPart {
     transition: 1.5s ease all;
 }
-.Documentations .TopPart{
+
+.Documentations .TopPart {
     transform: translateX(-150%);
 
 }
-.ArtSection .TopPart,.Research .TopPart{
+
+.ArtSection .TopPart, .Research .TopPart {
     transform: translateY(150%);
 }
-.ArtSection.active .TopPart,.Research.active .TopPart{
+
+.ArtSection.active .TopPart, .Research.active .TopPart {
     transform: translateX(0);
     opacity: 1;
 
 }
+
 .ArtSection .IMGPart {
     transform: translateX(-150%);
 
 }
-.Documentations .IMGPart,.Research .IMGPart {
+
+.Documentations .IMGPart, .Research .IMGPart {
     transform: translateX(150%);
 
 }
-.Documentations.active .TopPart,.Documentations.active .IMGPart,.ArtSection.active .IMGPart,.Research.active .IMGPart{
+
+.Documentations.active .TopPart, .Documentations.active .IMGPart, .ArtSection.active .IMGPart, .Research.active .IMGPart {
     transform: translateX(0%);
     opacity: 1;
 }
@@ -647,15 +724,17 @@ section.Partners.active {
     transform: translateX(-150%);
     transition: 3.5s ease all;
 }
-.header .MiddlePattern.BackImg ,.header .SidePattern.BackImg{
+
+.header .MiddlePattern.BackImg, .header .SidePattern.BackImg {
     opacity: 1;
 }
-.header .MiddlePattern img,.header .SidePattern   {
+
+.header .MiddlePattern img, .header .SidePattern {
     transition: 3s ease all;
 }
 
-.header.active .MiddlePattern img ,.header.active .SidePattern {
-    transform: rotate(360deg);
+.header.active .MiddlePattern img, .header.active .SidePattern {
+    transform: rotate(180deg);
     opacity: 1;
 }
 
@@ -706,20 +785,25 @@ section.AboutUs a.ServicesLink {
     transform: translate(0, 0);
     opacity: 1;
 }
-section.Sponsers .Title ,section.Sponsers img {
+
+section.Sponsers .Title, section.Sponsers img {
     transform: translateY(150%);
 
 }
-section.Sponsers .Title{
+
+section.Sponsers .Title {
     transition: 1s ease all;
 }
-section.Sponsers img{
-    transition:2s ease all ;
+
+section.Sponsers img {
+    transition: 2s ease all;
 }
-section.Sponsers.active .Title ,section.Sponsers.active img{
+
+section.Sponsers.active .Title, section.Sponsers.active img {
     transform: translateY(0);
     opacity: 1;
 }
+
 .NoBigAnim {
     transform: translateX(0px) !important;
     opacity: 1;
@@ -732,7 +816,12 @@ End Top Animation
 *********************
 *********************/
 
-
+/*********************
+*********************
+End Top Animation
+*********************
+*********************/
+.BackTop
 
 /***************************************************************************************
 ****************************************************************************************
@@ -867,6 +956,9 @@ End Top Animation
 
     footer.footer .footerItem {
         margin-bottom: 10px;
+    }
+    .ContactUsImg img{
+        width: 50% !important;
     }
 }
 

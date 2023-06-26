@@ -10,16 +10,11 @@ $(document).ready(function () {
     }
   });
 
-  $('body').css('overflow-x', 'hidden');
 
-  // Disable touchmove event on mobile devices
-  document.addEventListener('touchmove', function(event) {
-    event.preventDefault();
-  }, { passive: false });
 
   /**Animation */
   function PinkSeperatorAnim() {
-    var reveals = document.querySelectorAll(".AboutUs,.Partners,.Documentations , .Values,.ArtSection,.Research,.Sponsers,.footer");
+    var reveals = document.querySelectorAll(".AboutUs,.Partners,.header,.Documentations , .Values,.ArtSection,.Research,.Sponsers,.footer");
 
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
@@ -29,7 +24,7 @@ $(document).ready(function () {
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
       } else {
-        reveals[i].classList.add("BackTop");
+        reveals[i].classList.remove("active");
       }
     }
   }
