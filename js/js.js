@@ -41,5 +41,8 @@ $(document).ready(function () {
       $('header.header').addClass('again');
     }, 4000);
   
-
+    if (performance.navigation.type === 1) {
+      // Scroll to the top of the page
+      $('html, body').scrollTop(0);
+    }
 });
