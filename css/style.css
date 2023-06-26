@@ -139,7 +139,7 @@ header.header .HeaderText h2 {
     color: #DADADA;
 }
 
-header.header .HeaderText a.ServicesLink, section.AboutUs a.ServicesLink ,section.ContactU .formPart  form button{
+header.header .HeaderText a.ServicesLink, section.AboutUs a.ServicesLink, section.ContactU .formPart form button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,21 +157,23 @@ header.header .HeaderText a.ServicesLink, section.AboutUs a.ServicesLink ,sectio
     border: none;
 }
 
-header.header .HeaderText a.ServicesLink svg,section.ContactU .formPart  form button svg {
+header.header .HeaderText a.ServicesLink svg, section.ContactU .formPart form button svg {
     transition: 0.5s ease all;
 
 }
-section.ContactU .formPart  form button{
+
+section.ContactU .formPart form button {
     border: 2px solid #C5B2A3;
 }
-header.header .HeaderText a:hover,section.ContactU .formPart  form button:hover {
+
+header.header .HeaderText a:hover, section.ContactU .formPart form button:hover {
     background-color: white;
     color: #C5B2A3;
 
 
 }
 
-header.header .HeaderText a:hover svg ,section.ContactU .formPart  form button:hover  svg{
+header.header .HeaderText a:hover svg, section.ContactU .formPart form button:hover svg {
     transform: translateX(-300%);
 }
 
@@ -397,7 +399,7 @@ Sponsers
 **************
 **************/
 section.Sponsers {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 section.Sponsers .Pattern1 {
@@ -454,29 +456,33 @@ section.ContactU .formPart h1 {
 }
 
 section.ContactU .formPart h6 {
-    color:  #494949;
+    color: #494949;
     font-size: 20px;
     font-weight: 800;
 }
-section.ContactU .formPart  form{
+
+section.ContactU .formPart form {
     width: 75%;
     margin-top: 30px;
 }
-section.ContactU .formPart  form label.form-label{
-    color:  #131313;
-text-align: right;
-font-size: 20px;
-font-weight: 800;
-} 
-section.ContactU .formPart  form input,section.ContactU .formPart  form  textarea{
+
+section.ContactU .formPart form label.form-label {
+    color: #131313;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+section.ContactU .formPart form input, section.ContactU .formPart form textarea {
     padding: 24px 16px;
     border-radius: 8px;
-    border: 1px solid  #DBDBDB;
+    border: 1px solid #DBDBDB;
     direction: rtl;
     font-size: 16px;
-font-weight: 900;
-box-shadow: none;
+    font-weight: 900;
+    box-shadow: none;
 }
+
 /*************
 *************
 End Contact Us
@@ -491,11 +497,11 @@ Footer
 **************/
 footer.footer {
     background-color: black;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .container {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 footer.footer img {
@@ -561,7 +567,7 @@ header.header .ImagePart, .header .HeaderText {
     width: 0px !important;
     transition: 4s ease all;
     transition-delay: 4s;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 header.header.active.again .MiddlePattern img, .header.header.active.again .SidePattern {
@@ -821,7 +827,7 @@ End Top Animation
 End Top Animation
 *********************
 *********************/
-.BackTop
+
 
 /***************************************************************************************
 ****************************************************************************************
@@ -957,7 +963,8 @@ End Top Animation
     footer.footer .footerItem {
         margin-bottom: 10px;
     }
-    .ContactUsImg img{
+
+    .ContactUsImg img {
         width: 50% !important;
     }
 }
@@ -967,9 +974,11 @@ End Top Animation
         font-size: 30px;
         margin-bottom: 40px;
     }
-    section.ContactU .formPart form{
+
+    section.ContactU .formPart form {
         width: 90%;
     }
+
     header.header .HeaderText h1 {
         font-size: 41px;
     }
