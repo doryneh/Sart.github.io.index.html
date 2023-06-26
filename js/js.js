@@ -46,3 +46,15 @@ $(document).ready(function () {
       $('html, body').scrollTop(0);
     }
 });
+
+$(window).scroll(function() {
+  var navbarHeight = $('.navbar').outerHeight(); // Get the height of the navbar
+  var imagePartOffsetTop = $('.ImagePart img').offset().top; // Get the top offset of the ImagePart section
+  var scrollTop = $(window).scrollTop(); // Get the current scroll position
+  
+  if (scrollTop >= imagePartOffsetTop - navbarHeight) {
+    $('.navbar').css('z-index', '3000000'); // Change the z-index of the navbar
+  } else {
+    $('.navbar').css('z-index', '1050'); // Reset the z-index of the navbar
+  }
+});
