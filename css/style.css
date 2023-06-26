@@ -565,8 +565,8 @@ header.header .ImagePart, .header .HeaderText {
 
 .header .HeaderText img {
     width: 0px !important;
-    transition: 4s ease all;
-    transition-delay: 4s;
+    transition: 2s ease all;
+    transition-delay: 2s;
     overflow: hidden;
 }
 
@@ -581,8 +581,8 @@ header.header.active.again .MiddlePattern img, .header.header.active.again .Side
 
 .header .HeaderText a.ServicesLink {
     transform: translateX(150%);
-    transition: 4s ease all !important;
-    transition-delay: 4s !important;
+    transition: 2s ease all !important;
+    transition-delay: 2s !important;
 }
 
 .header.active .HeaderText a.ServicesLink {
@@ -591,8 +591,8 @@ header.header.active.again .MiddlePattern img, .header.header.active.again .Side
 
 .header .HeaderText h1, .header .HeaderText h2 {
     transform: translateY(400%);
-    transition: 4s ease all;
-    transition-delay: 4s;
+    transition: 2s ease all;
+    transition-delay: 2s;
 }
 
 .header.active .HeaderText h2, .header.active .HeaderText h1 {
@@ -606,15 +606,15 @@ header.header.active.again .MiddlePattern img, .header.header.active.again .Side
 
 .header .pinkRectangle {
     transform: translateX(-150%);
-    transition: 4s ease all;
+    transition: 2s ease all;
     opacity: 1 !important;
 }
 
 .header .ImagePart img {
     transform: translateX(-150%);
-    transition: 4s ease all;
+    transition: 2s ease all;
     opacity: 1;
-    transition-delay: 4s;
+    transition-delay: 2s;
 
 }
 
@@ -628,7 +628,7 @@ header.header.active.again .MiddlePattern img, .header.header.active.again .Side
 
 .header .blueRectangle {
     transform: translateY(-150%);
-    transition: 3s ease all;
+    transition: 2s ease all;
     opacity: 1;
 }
 

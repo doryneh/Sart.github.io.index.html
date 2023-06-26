@@ -39,7 +39,7 @@ $(document).ready(function () {
     // Wait 4 seconds and add 'active' class again
     setTimeout(function() {
       $('header.header').addClass('again');
-    }, 4000);
+    }, 2000);
   
     if (performance.navigation.type === 1) {
       // Scroll to the top of the page
