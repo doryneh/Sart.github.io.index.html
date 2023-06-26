@@ -26,17 +26,15 @@ nav.navbar .navbar-collapse .navbar-nav .nav-link {
     margin-left: 20px;
     font-size: 16px;
     line-height: 24px;
-
-}
-
-nav.navbar .navbar-collapse .navbar-nav .nav-link.active {
-    font-weight: 600;
+    width: fit-content;
 }
 
 nav.navbar .navbar-collapse .navbar-nav .nav-link.active, nav.navbar .navbar-collapse .navbar-nav .nav-link:hover, nav.navbar .form-select:hover {
     color: white;
     position: relative;
     cursor: pointer;
+    font-weight: 600;
+
 }
 
 nav.navbar .navbar-collapse .navbar-nav .nav-link.active .roundedActiveLink, nav.navbar .navbar-collapse .navbar-nav .nav-link:hover .roundedActiveLink {
@@ -492,19 +490,10 @@ h1, h2, p, a {
 
 /*********************
 *********************
-Animation
+Animation Top
 *********************
 *********************/
-/* .scroller {
-    overflow-x: hidden;
-  height: 100vh !important;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
 
-.scroller section {
-  scroll-snap-align: start;
-} */
 
 .AboutUs .BigImg img,.header .blueRectangle ,.header .pinkRectangle,.AboutUs .TwoImageAboutUs .One,.footer .FooterRow p,.footer .FooterRow .socialMedia a,.footer .FooterRow img ,.footer .FooterRow a,section.Sponsers .Title ,section.Sponsers img,.Values .ParaTitle,.ArtSection  .TopPart,.Research .TopPart,.Research .IMGPart,.ArtSection .IMGPart, .Values .Paragraph,.Documentations .Values .Services ul,.Documentations .TopPart, .Documentations .IMGPart, section.Partners, section.Partners .card, .BackImg, .AboutUs .TextRow a, .AboutUs .TextRow p, .AboutUs .TwoImageAboutUs .Two, .AboutUs .TextRow .Title {
     position: relative;
@@ -537,7 +526,7 @@ header.header.active.again .MiddlePattern img,.header.header.active.again .SideP
     transform: translateX(0px);
 }
 .header .HeaderText h1,.header .HeaderText h2{
-    transform: translateY(250%);
+    transform: translateY(400%);
     transition: 4s ease all;
     transition-delay: 4s;
 }
@@ -658,12 +647,14 @@ section.Partners.active {
     transform: translateX(-150%);
     transition: 3.5s ease all;
 }
-
-.BackImg ,.header .MiddlePattern img  {
+.header .MiddlePattern.BackImg ,.header .SidePattern.BackImg{
+    opacity: 1;
+}
+.header .MiddlePattern img,.header .SidePattern   {
     transition: 3s ease all;
 }
 
-.active .BackImg,.header.active .MiddlePattern img {
+.header.active .MiddlePattern img ,.header.active .SidePattern {
     transform: rotate(360deg);
     opacity: 1;
 }
@@ -737,7 +728,7 @@ section.Sponsers.active .Title ,section.Sponsers.active img{
 
 /*********************
 *********************
-End Animation
+End Top Animation
 *********************
 *********************/
 

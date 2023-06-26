@@ -10,6 +10,13 @@ $(document).ready(function () {
     }
   });
 
+  $('body').css('overflow-x', 'hidden');
+
+  // Disable touchmove event on mobile devices
+  document.addEventListener('touchmove', function(event) {
+    event.preventDefault();
+  }, { passive: false });
+
   /**Animation */
   function PinkSeperatorAnim() {
     var reveals = document.querySelectorAll(".AboutUs,.Partners,.Documentations , .Values,.ArtSection,.Research,.Sponsers,.footer");
