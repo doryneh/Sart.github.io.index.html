@@ -20,7 +20,9 @@ Navar
 nav.navbar {
     background-color:  #131313;
 }
-
+nav.navbar .navbar-brand img,nav.navbar .navbar-brand {
+    mix-blend-mode: lighten;
+}
 nav.navbar .navbar-collapse .navbar-nav .nav-link {
     color: #DADADA;
     margin-left: 20px;
