@@ -18,7 +18,7 @@ Navar
 **************
 **************/
 nav.navbar {
-    background-color: black;
+    background-color:  #131313;
 }
 
 nav.navbar .navbar-collapse .navbar-nav .nav-link {
@@ -118,12 +118,13 @@ header.header .SidePattern {
 
 header.header .HeaderText img {
     mix-blend-mode: lighten;
+    width: 50%;
 }
 
 header.header .HeaderText h1 {
     font-weight: 900;
-    font-size: 48px;
-    line-height: 59px;
+    font-size: 64px;
+    line-height: 78px;
     color: white;
     margin: 30px 0;
 }
@@ -140,7 +141,7 @@ header.header .HeaderText h2 {
     color: #DADADA;
 }
 
-header.header .HeaderText a.ServicesLink, section.AboutUs a.ServicesLink, section.ContactU .formPart form button {
+header.header .HeaderText a.ServicesLink, section.ContactU .formPart form button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -243,18 +244,7 @@ section.AboutUs p {
     width: 66%;
 }
 
-section.AboutUs a.ServicesLink {
-    background-color: transparent;
-    color: #4762B3;
-}
 
-section.AboutUs a.ServicesLink svg {
-    transition: 2s ease all;
-}
-
-section.AboutUs a.ServicesLink:hover svg {
-    transform: translateX(-100vw);
-}
 
 section.AboutUs .ImgRow {
     z-index: 10;
@@ -387,6 +377,24 @@ section.Documentations .Services ul, section.ArtSection .Services ul, section.Re
 section.Documentations .Services ul li, section.ArtSection .Services ul li, section.Research .Services ul li {
     padding-right: 0px;
 }
+section.ArtSection .SartLogo{
+    width: 86px !important;
+
+}
+section.ArtSection .ServicesLink{
+    font-size: 24px;
+font-weight: 800;
+color: #4762B3;
+text-decoration: none;
+width: fit-content;
+}
+section.ArtSection .ServicesLink img{
+    width: 46px;
+    transition: 1s ease all;
+}
+section.ArtSection .ServicesLink:hover img{
+    transform: rotate(-360deg);
+}
 
 /*************
 *************
@@ -490,6 +498,31 @@ End Contact Us
 **************
 **************/
 
+/*************
+*************
+Blog Part
+**************
+**************/
+section.BLogPart p.Paragraph{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: -1px;
+    color: #494949;
+}
+section.BLogPart .BlogImg{
+   width: 100%;
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+
+/*************
+*************
+End Blog Part
+**************
+**************/
+
 
 /*************
 *************
@@ -524,8 +557,9 @@ footer.footer a:hover {
 }
 
 footer.footer .socialMedia a {
-    font-size: 24px;
+    font-size: 30px;
     color: #C5B2A3;
+
 }
 
 footer.footer .socialMedia a:hover {
@@ -602,7 +636,7 @@ header.header.active.again .MiddlePattern img, .header.header.active.again .Side
 }
 
 .header.active .HeaderText img {
-    width: 25% !important;
+    width: 45% !important;
 }
 
 .header .pinkRectangle {
@@ -641,8 +675,12 @@ header.header.active.again .MiddlePattern img, .header.header.active.again .Side
     transition: 1.5s ease all;
     transform: translateX(150px);
 }
-
-.Values.active .ParaTitle, .Values.active .Paragraph, .Values.active .Services ul {
+.Values  .Sart{
+    transition: 1.5s ease all;
+    transform: translateX(150px);
+    opacity: 0;
+}
+.Values.active .ParaTitle, .Values.active .Paragraph, .Values.active .Services ul ,.Values.active  .Sart{
     transform: translateX(0px);
     opacity: 1;
 }
@@ -1011,6 +1049,12 @@ End Top Animation
 
     section.Partners .card .card-body a img {
         width: 40px;
+    }
+    .LogoSocialFooter{
+        flex-direction: column;
+    }
+    .socialMedia{
+        margin-right: 0 !important;
     }
 }
 
