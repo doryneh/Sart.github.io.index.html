@@ -18,11 +18,13 @@ Navar
 **************
 **************/
 nav.navbar {
-    background-color:  #131313;
+    background-color: #131313;
 }
-nav.navbar .navbar-brand img,nav.navbar .navbar-brand {
+
+nav.navbar .navbar-brand img, nav.navbar .navbar-brand {
     mix-blend-mode: lighten;
 }
+
 nav.navbar .navbar-collapse .navbar-nav .nav-link {
     color: #DADADA;
     margin-left: 20px;
@@ -379,22 +381,26 @@ section.Documentations .Services ul, section.ArtSection .Services ul, section.Re
 section.Documentations .Services ul li, section.ArtSection .Services ul li, section.Research .Services ul li {
     padding-right: 0px;
 }
-section.ArtSection .SartLogo{
+
+section.ArtSection .SartLogo {
     width: 86px !important;
 
 }
-section.ArtSection .ServicesLink{
+
+section.ArtSection .ServicesLink {
     font-size: 24px;
-font-weight: 800;
-color: #4762B3;
-text-decoration: none;
-width: fit-content;
+    font-weight: 800;
+    color: #4762B3;
+    text-decoration: none;
+    width: fit-content;
 }
-section.ArtSection .ServicesLink img{
+
+section.ArtSection .ServicesLink img {
     width: 46px;
     transition: 1s ease all;
 }
-section.ArtSection .ServicesLink:hover img{
+
+section.ArtSection .ServicesLink:hover img {
     transform: rotate(-360deg);
 }
 
@@ -505,17 +511,18 @@ End Contact Us
 Blog Part
 **************
 **************/
-section.BLogPart p.Paragraph{
+section.BLogPart p.Paragraph {
     font-size: 20px;
     font-weight: 400;
     line-height: 160%;
     letter-spacing: -1px;
     color: #494949;
 }
-section.BLogPart .BlogImg{
-   width: 100%;
-   margin-top: 50px;
-   margin-bottom: 50px;
+
+section.BLogPart .BlogImg {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -677,12 +684,14 @@ header.header.active.again .MiddlePattern img, .header.header.active.again .Side
     transition: 1.5s ease all;
     transform: translateX(150px);
 }
-.Values  .Sart{
+
+.Values .Sart {
     transition: 1.5s ease all;
     transform: translateX(150px);
     opacity: 0;
 }
-.Values.active .ParaTitle, .Values.active .Paragraph, .Values.active .Services ul ,.Values.active  .Sart{
+
+.Values.active .ParaTitle, .Values.active .Paragraph, .Values.active .Services ul, .Values.active .Sart {
     transform: translateX(0px);
     opacity: 1;
 }
@@ -1052,10 +1061,12 @@ End Top Animation
     section.Partners .card .card-body a img {
         width: 40px;
     }
-    .LogoSocialFooter{
+
+    .LogoSocialFooter {
         flex-direction: column;
     }
-    .socialMedia{
+
+    .socialMedia {
         margin-right: 0 !important;
     }
 }
