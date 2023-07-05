@@ -14,7 +14,7 @@ $(document).ready(function () {
 
   /**Animation */
   function PinkSeperatorAnim() {
-    var reveals = document.querySelectorAll(".AboutUs,.Partners,.header,.Documentations , .Values,.ArtSection,.Research,.Sponsers,.footer");
+    var reveals = document.querySelectorAll(".BlogCards,.AboutUs,.Partners,.header,.Documentations , .Values,.ArtSection,.Research,.Sponsers,.footer");
 
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
@@ -57,4 +57,11 @@ $(window).scroll(function () {
   } else {
     $('.navbar').css('z-index', '1050'); // Reset the z-index of the navbar
   }
+
+
+ 
 });
+
+
+
+

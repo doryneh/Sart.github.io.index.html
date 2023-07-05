@@ -230,7 +230,7 @@ section.AboutUs {
     position: relative;
 }
 
-section.AboutUs .Title, section.Sponsers .Title {
+section.AboutUs .Title, section.Sponsers .Title,section.BlogCards .Title {
     font-weight: 900;
     font-size: 48px;
     line-height: 59px;
@@ -274,6 +274,86 @@ section.AboutUs .SidePatternTwo {
 end About Us
 **************
 **************/
+/*************
+*************
+Blog Cards
+**************
+**************/
+section.BlogCards .carousel {
+    padding-bottom: 4vw;
+}
+section.BlogCards .flickity-enabled.is-draggable .flickity-viewport{
+    height: 550px !important;
+}
+section.BlogCards .carousel-cell {
+    width: 30vw;
+    max-resolution: 4vw;
+    margin-right: 4vw;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 24px;
+    height: 100%;
+
+}
+
+section.BlogCards .card {
+    border: 1px solid #C5B2A3;
+    border-radius: 0px;
+    height: 100%;
+}
+section.BlogCards .card img.card-img-top{
+    max-height: 250px;
+    min-height: 250px;
+}
+section.BlogCards .card .card-body {
+    text-align: right;
+    padding: 0px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+section.BlogCards .card .card-body .card-title {
+    color: #131313;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 150%;
+}
+
+section.BlogCards .card-body  .card-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    color: #494949;
+font-size: 20px;
+font-weight: 800;
+line-height: normal;
+}
+section.BlogCards .flickity-page-dots .dot {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(197, 178, 163, 0.9);
+  }
+  
+  section.BlogCards .flickity-page-dots .dot.is-selected {
+    width: 24px;
+    height: 24px;
+    background-color: rgba(197, 178, 163, 1);
+  }
+
+
+/*************
+*************
+end Blog Cards
+
+**************
+**************/
+
 
 /*************
 *************
@@ -306,30 +386,30 @@ section.Partners .card .card-body .card-text {
 
 }
 
-section.Partners .card .card-body hr {
+section.Partners .card .card-body hr,section.BlogCards .card .card-body hr  {
     background-color: #b7b7b7;
     border: 1px solid #b7b7b7;
 
-    margin: 30px 0px;
-
+    margin: 15px 0px;
+    width: 100%;
 }
 
-section.Partners .card .card-body a {
+section.Partners .card .card-body a ,section.BlogCards .card .card-body a{
     font-weight: 800;
     font-size: 24px;
-    line-height: 150%;
+    line-height: 75px;
     color: #494949;
     background-color: transparent;
     border: none;
     box-shadow: none;
 }
 
-section.Partners .card .card-body a img {
+section.Partners .card .card-body a img,section.BlogCards .card .card-body a img {
     transition: transform .7s ease-in-out;
 
 }
 
-section.Partners .card .card-body a:hover img {
+section.Partners .card .card-body a:hover img,section.BlogCards .card .card-body a:hover img {
     transform: rotate(-360deg);
 }
 
@@ -685,13 +765,13 @@ header.header.active.again .MiddlePattern img, .header.header.active.again .Side
     transform: translateX(150px);
 }
 
-.Values .Sart {
+.Values .Sart,section.BlogCards .carousel {
     transition: 1.5s ease all;
     transform: translateX(150px);
     opacity: 0;
 }
 
-.Values.active .ParaTitle, .Values.active .Paragraph, .Values.active .Services ul, .Values.active .Sart {
+.Values.active .ParaTitle, .Values.active .Paragraph,section.BlogCards.active .carousel , .Values.active .Services ul, .Values.active .Sart {
     transform: translateX(0px);
     opacity: 1;
 }
@@ -922,7 +1002,19 @@ End Top Animation
     header.header .blueRectangle {
         display: none;
     }
-
+    section.BlogCards .card img.card-img-top{
+        max-height: 200px;
+    min-height: 200px;
+    }
+    section.BlogCards .card .card-body .card-title{
+        font-size: 29px;
+    }
+    section.BlogCards .card-body .card-text{
+        font-size: 18px;
+    }
+    section.BlogCards .flickity-enabled.is-draggable .flickity-viewport{
+        height: 500px !important;
+    }
     div#navbarNavDropdown {
         justify-content: center !important;
     }
@@ -975,7 +1067,12 @@ End Top Animation
         margin-bottom: 40px;
         margin-left: 0px;
     }
-
+    section.BlogCards .card .card-body a {
+        line-height: 40px;
+    }
+    section.BlogCards .carousel-cell{
+        width: 35vw;
+    }
     .navbar-nav {
 
         height: 100vh;
@@ -1024,7 +1121,25 @@ End Top Animation
         font-size: 30px;
         margin-bottom: 40px;
     }
-
+    section.AboutUs .Title, section.Sponsers .Title, section.BlogCards .Title {
+        font-size: 45px;
+    }
+    section.BlogCards .carousel-cell{
+        width: 45vw;
+    }
+    section.BlogCards .card .card-body a {
+        line-height: 30px;
+    }
+    section.BlogCards .card .card-body a img{
+        width: 50px;
+    }
+    section.BlogCards .flickity-enabled.is-draggable .flickity-viewport{
+        height: 452px !important;
+    }
+    section.BlogCards .card img.card-img-top {
+        max-height: 170px;
+        min-height: 170px;
+    }
     section.ContactU .formPart form {
         width: 90%;
     }
@@ -1077,7 +1192,41 @@ End Top Animation
         font-size: 37px;
         line-height: 50px;
     }
-
+    section.BlogCards .carousel-cell {
+        width: 52vw;
+    }
+    section.BlogCards .card .card-body .card-title {
+        font-size: 24px;
+    }
+    section.BlogCards .card-body .card-text {
+        font-size: 16px;
+    }
+    section.BlogCards .flickity-enabled.is-draggable .flickity-viewport {
+        height: 400px !important;
+    }
+    section.BlogCards .card .card-body a{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    section.BlogCards .card .card-body a img {
+        width: 40px;
+    }
+    
+    section.AboutUs .Title, section.Sponsers .Title, section.BlogCards .Title {
+        font-size: 40px;
+    }
+section.BlogCards .flickity-page-dots .dot.is-selected {
+    width: 20px;
+    height: 20px;
+}
+section.BlogCards .flickity-page-dots .dot{
+    width: 16px;
+    height: 16px;
+}
+    section.BlogCards .card img.card-img-top {
+        max-height: 150px;
+        min-height: 150px;
+    }
     header.header .HeaderText h2 {
         font-size: 18px;
     }
