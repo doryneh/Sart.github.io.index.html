@@ -56,6 +56,10 @@ body {
 a {
     text-decoration: none !important;
 }
+img[imgsrc] {
+
+    background-color: #eee;
+}
 
 /*************
 *************
@@ -237,6 +241,7 @@ Blog Cards
 section.BlogCards .YellowCircle{
     left: 42%;
 }
+
 section.BlogCards .card {
     background-color: transparent;
     border: none;
