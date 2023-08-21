@@ -12,7 +12,7 @@
   <meta name="description" content="">
 
 
-  <title> Sanova | Homepage</title>
+  <title> Sart | Homepage</title>
 </head>
 
 <body>
@@ -22,62 +22,55 @@
     <div class="container">
       <div class="d-flex">
         <a class="navbar-brand" href="index.html#header">
-          <img src="images/Logo.svg" alt="sanova logo">
+          <img src="images/Logo.svg" alt="Sart logo">
         </a>
-        <select class="form-select" aria-label="Default select example">
-          <option selected>العربية</option>
-          <option value="1">الإنجليزية</option>
-        </select>
+
       </div>
 
 
-      <div class="collapse navbar-collapse justify-content-start ms-xl-5 ps-xxl-5" id="navbarNavDropdown"
-        data-bs-spy="scroll">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown" data-bs-spy="scroll">
         <ul class="navbar-nav ">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#AboutUs">
-              عن سانوفا
-              <span class="roundedActiveLink"></span>
+              من نحن
+
             </a>
           </li>
 
           <li class="nav-item">
             <a class="nav-link" href="#Documentations">
-              وثائقيات
-              <span class="roundedActiveLink"></span>
+              مقالات
+
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#ArtSection">
-              فنون
-              <span class="roundedActiveLink"></span>
+              إنفوجرافيك
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#Research">
-              أبحاث واستشارات
+              سرد
 
-              <span class="roundedActiveLink"></span>
+
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#Sponsers">
-              شركائنا
-              <span class="roundedActiveLink"></span>
+              تشكيل
+
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="ContactUs.html">تواصل معنا
-              <span class="roundedActiveLink"></span>
+            <a class="nav-link" href="ContactUs.html">
+              خدماتنا
             </a>
           </li>
         </ul>
       </div>
       <div class=" d-flex sideNavButtons">
-        <select class="form-select d-none d-lg-block" aria-label="Default select example">
-          <option selected>العربية</option>
-          <option value="1">الإنجليزية</option>
-        </select>
+        <a href="" class=" ContactSartBtn">تواصل مع سارت <img src="images/ContactSartBtnIcon.svg"
+            alt="ContactSartBtnIcon"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa-solid fa-bars"></i>
@@ -88,274 +81,178 @@
 
   <!--End Navbar-->
 
-  <!-- Banner-->
-  <header class="header section Scroll" id="header">
-    <div class="blueRectangle"></div>
-    <div class="MiddlePattern  BackImg d-flex BigPatternBanner"><img src="images/PatternBig.svg" alt="PatternBig Sanova"
-        class="mx-auto" style="width: 65%;"></div>
-    <div class="MiddlePattern BackImg d-flex"><img src="images/PatternSmall.svg" alt="PatternSmall Sanova"
-        class="mx-auto " style="width: 65%;">
-    </div>
-    <div class="SidePattern BackImg"><img src="images/PatternSmall.svg" alt="PatternSmall Sanova"></div>
+  <!--Header-->
+  <header class="header py-5 mt-5" id="header">
+    <div class="container pt-5">
+      <h1>
+        <div class="HeaderTitle">سارت للفنون</div>
+        <div class="YellowCircle"> <img src="images/SartBGCircle.svg" alt="SartBGCircle"></div>
+      </h1>
+      <h2>
+        وجهتك نحو الفنون والجماليات
+      </h2>
 
-    <div class="container h-100 p-0">
-      <div class="row w-100 h-100 m-0  pt-5">
-        <div class="col-xl-6">
-          <div></div>
-          <div class="w-100 h-100 py-5 d-flex flex-column justify-content-center align-items-start HeaderText">
+      <!--Header Carousel -->
+      <div class="CarouselPart d-flex mt-3">
+        <div class="CarouselItem CarouselOne active">
+          <img src="images/HeaderCarousel1.png" alt="HeaderCarousel1">
 
-            <img src="images/Logo.svg" alt="Logo sanova" class="HeaderLogo">
-            <div class="OverflowHidden">
-              <h1>مجموعة <span>سانوفا </span> الثقافية </h1>
-              <h2>
-                شركة متخصصة في صناعة العمل الثقافي</h2>
-            </div>
-            <a href="" class="ServicesLink">تصفح المقالات <i class="fa-solid fa-arrow-left-long ms-2"></i></a>
-          </div>
         </div>
-        <div class="col-xl-6 ">
-          <div class="w-100 h-100 py-5 d-flex justify-content-center align-items-center ImagePart">
-            <img src="images/BanerImage.png" alt="Baner Image sanova ">
-            <div class="pinkRectangle"></div>
-          </div>
+        <div class="CarouselItem CarouselTwo">
+          <img src="images/HeaderCarousel2.png" alt="HeaderCarousel1">
+
+        </div>
+        <div class="CarouselItem CarouselThree">
+          <img src="images/HeaderCarousel1.png" alt="HeaderCarousel1">
+
+        </div>
+        <div class="CarouselItem CarouselFour">
+          <img src="images/HeaderCarousel2.png" alt="HeaderCarousel1">
+
+        </div>
+
+
+        <div class="CarouselDots">
+          <div class="CarouselDot" data-target=".CarouselFour"></div>
+          <div class="CarouselDot" data-target=".CarouselThree"></div>
+          <div class="CarouselDot" data-target=".CarouselTwo"></div>
+          <div class="CarouselDot active" data-target=".CarouselOne"></div>
 
         </div>
       </div>
+
+
     </div>
   </header>
-  <!--End Banner-->
+  <!--End Header-->
 
-  <!--About US-->
 
-  <section class="AboutUs py-5  section " id="AboutUs">
-    <div class="SidePattern BackImg"><img src="images/AboutPatternRight.svg" alt="PatternSmall Sanova"></div>
-    <div class="SidePatternTwo BackImg"><img src="images/AboutPatternLeft.svg" alt="PatternSmall Sanova"></div>
-
-    <div class="container">
-      <div class="row TextRow">
-        <div class="Title"><img src="images/HeadingPink.svg" alt="HeadingPink About Us "> من نحن</div>
-        <p class=" mx-auto mt-4">نحن شركة متخصصة في صناعة العمل الثقافي في مسارات عدة منها الأبحاث، والاستشارات،
-          والتحرير، والترجمة، والنشر، والفنون، والوثائقيات، والفعاليات الثقافية. فنقدم الخدمات للجهات المختلفة وفق
-          أعلى
-          المعايير وعلى يد أكفأ المتخصصين، كما نقدم مواد معرفية وثقافية لعموم القراء والمهتمين، بهدف إثراء المحتوى
-          العربي، إسهامًا في الحراك الثقافي العام الذي تشهده المملكة العربية السعودية بما يحقق مستهدفات رؤية ٢٠٣٠.</p>
-
-      </div>
-      <div class="row mt-5 ImgRow gx-lg-5">
-        <div class="col-xl-4">
-
-          <div class="d-flex flex-column h-100 justify-content-between align-items-center TwoImageAboutUs">
-            <div>
-              <img src="images/AboutUs Img 1.png" alt="AboutUs Img 1" class="w-100 One">
-            </div>
-            <div class="secondImg">
-              <img src="images/AboutUs Img 2.png" alt="AboutUs Img 2" class="w-100 Two">
-
-            </div>
-
-          </div>
-        </div>
-        <div class="col-xl-8 ">
-          <div class="d-flex  flex-column justify-content-between align-items-center BigImg">
-
-            <img src="images/AboutUs Img 3.png" alt="AboutUs Img 3" class="w-100">
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-  <!--End About US-->
 
   <!--BLog Cards-->
   <section class="BlogCards py-5" id="BlogCards">
     <div class="container-fluid">
-      <div class="Title mb-4"><img src="images/HeadingPink.svg" alt="HeadingPink About Us "> المقالات </div>
-      <div class="carousel"
-      data-flickity='{"freeScroll": true,"wrapAround": true, "prevNextButtons": false, "": true}'>
-      <div class="carousel-cell">
-          <div class="card p-3">
-            <img src="images/BlogCardImg1.png" class="card-img-top" alt="BlogCardImg1">
-            <div class="card-body">
-              <h5 class="card-title"> عنوان المقال</h5>
-              <p class="card-text">
-                ننتج الأفلام الوثائقية، خاصة تلك المتعلقة بالمملكة العربية السعودية، ونقدم استشارات وتدريبات في الإنتاج
-                السينمائي.
-              </p>
-              <hr>
-              <a href="BlogPage.html" class="btn btn-primary mx-auto w-100"> المزيد <img src="images/arrowCircle.svg"
-                  alt="images/arrowCircle.jpeg"></a>
+      <div class="SectionTitle mb-4">
+        <img src="images/SartBGCircle.svg" alt="  " class="YellowCircle">
+        <div class="Text">
+          مقالات سارت
+
+        </div>
+      </div>
+      <div class="Paragraph BlueText text-center disabled">
+        يمكنك العثور على عدة مقالات في العديد من مجالات سارت
+      </div>
+
+
+      <div class="CardsPart mt-4">
+        <div class="row">
+          <div class="col-lg-3 col-sm-4 col-6">
+            <div class="card">
+              <a href="BlogPage.html">
+              <img src="images/blogImage1.png" alt="blogImage1">
+              <div class="Paragraph BlueText text-center mt-2">
+                الفنّان عبد الرحمن السليمان
+              </div>
+              <div class="Paragraph BlueText text-center disabled mt-2">
+                بقلم: سارة الراجحي
+              </div>
+            </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 col-6">
+            <div class="card">
+              <a href="BlogPage.html">
+
+              <img src="images/blogImage4.png" alt="blogImage1">
+              <div class="Paragraph BlueText text-center mt-2">
+                الفنّان عبد الرحمن السليمان
+              </div>
+              <div class="Paragraph BlueText text-center disabled mt-2">
+                بقلم: سارة الراجحي
+              </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 col-6 mt-4 mt-sm-0">
+            <div class="card">
+              <img src="images/blogImage2.png" alt="blogImage1">
+              <div class="Paragraph BlueText text-center mt-2">
+                الفنّان عبد الرحمن السليمان
+              </div>
+              <div class="Paragraph BlueText text-center disabled mt-2">
+                بقلم: سارة الراجحي
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 col-6  mt-4 mt-md-0">
+            <div class="card">
+              <img src="images/blogImage3.png" alt="blogImage1">
+              <div class="Paragraph BlueText text-center mt-2">
+                الفنّان عبد الرحمن السليمان
+              </div>
+              <div class="Paragraph BlueText text-center disabled mt-2">
+                بقلم: سارة الراجحي
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 col-6  mt-4">
+            <div class="card">
+              <img src="images/blogImage2.png" alt="blogImage1">
+              <div class="Paragraph BlueText text-center mt-2">
+                الفنّان عبد الرحمن السليمان
+              </div>
+              <div class="Paragraph BlueText text-center disabled mt-2">
+                بقلم: سارة الراجحي
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 col-6  mt-4">
+            <div class="card">
+              <img src="images/blogImage3.png" alt="blogImage1">
+              <div class="Paragraph BlueText text-center mt-2">
+                الفنّان عبد الرحمن السليمان
+              </div>
+              <div class="Paragraph BlueText text-center disabled mt-2">
+                بقلم: سارة الراجحي
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 col-6  mt-4">
+            <div class="card">
+              <img src="images/blogImage4.png" alt="blogImage1">
+              <div class="Paragraph BlueText text-center mt-2">
+                الفنّان عبد الرحمن السليمان
+              </div>
+              <div class="Paragraph BlueText text-center disabled mt-2">
+                بقلم: سارة الراجحي
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 col-6  mt-4">
+            <div class="card">
+              <img src="images/blogImage1.png" alt="blogImage1">
+              <div class="Paragraph BlueText text-center mt-2">
+                الفنّان عبد الرحمن السليمان
+              </div>
+              <div class="Paragraph BlueText text-center disabled mt-2">
+                بقلم: سارة الراجحي
+              </div>
             </div>
           </div>
         </div>
-        <div class="carousel-cell">
-          <div class="card p-3">
-            <img src="images/BlogCardImg2.png" class="card-img-top" alt="BlogCardImg1">
-            <div class="card-body">
-              <h5 class="card-title"> عنوان المقال</h5>
-              <p class="card-text">
-                ننتج الأفلام الوثائقية، خاصة تلك المتعلقة بالمملكة العربية السعودية، ونقدم استشارات وتدريبات في الإنتاج
-                السينمائي.
-              </p>
-              <hr>
-              <a href="BlogPage.html" class="btn btn-primary mx-auto w-100"> المزيد <img src="images/arrowCircle.svg"
-                  alt="images/arrowCircle.jpeg"></a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-cell">
-          <div class="card p-3">
-            <img src="images/BlogCardImg3.png" class="card-img-top" alt="BlogCardImg1">
-            <div class="card-body">
-              <h5 class="card-title"> عنوان المقال</h5>
-              <p class="card-text">
-                ننتج الأفلام الوثائقية، خاصة تلك المتعلقة بالمملكة العربية السعودية، ونقدم استشارات وتدريبات في الإنتاج
-                السينمائي.
-              </p>
-              <hr>
-              <a href="BlogPage.html" class="btn btn-primary mx-auto w-100"> المزيد <img src="images/arrowCircle.svg"
-                  alt="images/arrowCircle.jpeg"></a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-cell">
-          <div class="card p-3">
-            <img src="images/BlogImg.png" class="card-img-top" alt="BlogImg">
-            <div class="card-body">
-              <h5 class="card-title"> عنوان المقال</h5>
-              <p class="card-text">
-                ننتج الأفلام الوثائقية، خاصة تلك المتعلقة بالمملكة العربية السعودية، ونقدم استشارات وتدريبات في الإنتاج
-                السينمائي.
-              </p>
-              <hr>
-              <a href="BlogPage.html" class="btn btn-primary mx-auto w-100"> المزيد <img src="images/arrowCircle.svg"
-                  alt="images/arrowCircle.jpeg"></a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-cell">
-          <div class="card p-3">
-            <img src="images/BlogCardImg1.png" class="card-img-top" alt="BlogCardImg1">
-            <div class="card-body">
-              <h5 class="card-title"> عنوان المقال</h5>
-              <p class="card-text">
-                ننتج الأفلام الوثائقية، خاصة تلك المتعلقة بالمملكة العربية السعودية، ونقدم استشارات وتدريبات في الإنتاج
-                السينمائي.
-              </p>
-              <hr>
-              <a href="BlogPage.html" class="btn btn-primary mx-auto w-100"> المزيد <img src="images/arrowCircle.svg"
-                  alt="images/arrowCircle.jpeg"></a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-cell">
-          <div class="card p-3">
-            <img src="images/BlogCardImg2.png" class="card-img-top" alt="BlogCardImg1">
-            <div class="card-body">
-              <h5 class="card-title"> عنوان المقال</h5>
-              <p class="card-text">
-                ننتج الأفلام الوثائقية، خاصة تلك المتعلقة بالمملكة العربية السعودية، ونقدم استشارات وتدريبات في الإنتاج
-                السينمائي.
-              </p>
-              <hr>
-              <a href="BlogPage.html" class="btn btn-primary mx-auto w-100"> المزيد <img src="images/arrowCircle.svg"
-                  alt="images/arrowCircle.jpeg"></a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-cell">
-          <div class="card p-3">
-            <img src="images/BlogCardImg3.png" class="card-img-top" alt="BlogCardImg1">
-            <div class="card-body">
-              <h5 class="card-title"> عنوان المقال</h5>
-              <p class="card-text">
-                ننتج الأفلام الوثائقية، خاصة تلك المتعلقة بالمملكة العربية السعودية، ونقدم استشارات وتدريبات في الإنتاج
-                السينمائي.
-              </p>
-              <hr>
-              <a href="BlogPage.html" class="btn btn-primary mx-auto w-100"> المزيد <img src="images/arrowCircle.svg"
-                  alt="images/arrowCircle.jpeg"></a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-cell">
-          <div class="card p-3">
-            <img src="images/BlogImg.png" class="card-img-top" alt="BlogImg">
-            <div class="card-body">
-              <h5 class="card-title"> عنوان المقال</h5>
-              <p class="card-text">
-                ننتج الأفلام الوثائقية، خاصة تلك المتعلقة بالمملكة العربية السعودية، ونقدم استشارات وتدريبات في الإنتاج
-                السينمائي.
-              </p>
-              <hr>
-              <a href="BlogPage.html" class="btn btn-primary mx-auto w-100"> المزيد <img src="images/arrowCircle.svg"
-                  alt="images/arrowCircle.jpeg"></a>
-            </div>
-          </div>
-        </div>
-   
       </div>
     </div>
+
+
   </section>
   <!--ENd Blog Cards-->
 
-  <!--Our Partners-->
-
-  <section class="Partners py-5 mt-5 section" id="Partners">
-    <div class="container p-0">
-      <div class="row mx-0">
-        <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-          <div class="card pt-4 pb-2  h-100">
-            <img src="images/Documentation Logo.png" class="card-img-top w-50 mx-auto" alt="Documentation sanova logo">
-            <div class="card-body text-center justify-content-between d-flex flex-column">
-              <h5 class="card-title my-md-4">وثائقيات</h5>
-              <p class="card-text">
-                ننتج الأفلام الوثائقية، خاصة تلك المتعلقة بالمملكة العربية السعودية، ونقدم استشارات وتدريبات في
-                الإنتاج
-                السينمائي.
-              </p>
-              <hr>
-              <a href="#Documentations" class="btn btn-primary"> المزيد <img src="images/arrowCircle.svg"
-                  alt="images/arrowCircle.jpeg"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4 mx-auto mb-lg-0 mx-lg-0">
-          <div class="card pt-4 pb-2 h-100">
-            <img src="images/Art Logo.png" class="card-img-top w-50 mx-auto" alt="Art sanova logo">
-            <div class="card-body text-center">
-              <h5 class="card-title my-md-4">فنون</h5>
-              <p class="card-text">
-                نسعى عبر شركة «سارت» المتخصصة في الفنون إلى نشر الثقافة الفنيّة، وإثراء المحتوى المعرفي في الفنّ
-                والمجالات المتقاطعة معه، كما نقدّم خدماتٍ متنوعة متعلقة بالمشهد الفنّي والجمالي المحلي.
-              </p>
-              <hr>
-              <a href="#ArtSection" class="btn btn-primary"> المزيد <img src="images/arrowCircle.svg"
-                  alt="images/arrowCircle.jpeg"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0 mx-auto mx-lg-0">
-          <div class="card pt-4 pb-2  h-100">
-            <img src="images/Research Logo.png" class="card-img-top w-50 mx-auto" alt="Research sanova logo">
-            <div class="card-body text-center justify-content-between d-flex flex-column">
-              <h5 class="card-title my-md-4">الأبحاث</h5>
-              <p class="card-text">
-                مركز بحثي معنيّ بالإنتاج المعرفي المؤصّل الذي يساهم في تلبية احتياجات العلم والمجتمع، واستقطاب
-                المشاريع
-                البحثية، والمساهمة في تطويرها منهجيًا.
-              </p>
-              <hr>
-              <a href="#Research" class="btn btn-primary"> المزيد <img src="images/arrowCircle.svg"
-                  alt="images/arrowCircle.jpeg"></a>
-            </div>
-          </div>
-        </div>
-
-      </div>
+<section class="Feedback py-5" id="Feedback">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-6"></div>
     </div>
-  </section>
-  <!--End Our Partners-->
+  </div>
+</section>
 
 
   <!--Documentation-->

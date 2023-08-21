@@ -1,20 +1,31 @@
 $(document).ready(function () {
-  $('.nav-link').click(function () {
-    $('.nav-link.active').removeClass('active');
-    $(this).addClass('active');
+  function activateCarouselItem($item) {
+    $(".CarouselItem.active").removeClass("active");
+    $item.addClass("active");
+  }
+
+  $(".CarouselItem").hover(function () {
+    activateCarouselItem($(this));
   });
 
-  $('.nav-link').click(function () {
-    if ($(window).width() < 991) {
-      $('.navbar-collapse').collapse('hide');
-    }
+  // To ensure the active class change also works when hovering over CarouselOne
+  $(".CarouselOne").hover(function () {
+    activateCarouselItem($(this));
   });
 
-
-
+  $(".CarouselDot").click(function () {
+    var targetClass = $(this).data("target");
+    $(".CarouselItem.active").removeClass("active");
+    $(targetClass).addClass("active");
+    $(".CarouselDot.active").removeClass("active");
+    $(this).addClass("active");
+});
+  
   /**Animation */
   function PinkSeperatorAnim() {
-    var reveals = document.querySelectorAll(".BlogCards,.AboutUs,.Partners,.header,.Documentations , .Values,.ArtSection,.Research,.Sponsers,.footer");
+    var reveals = document.querySelectorAll(
+      ".BlogCards,.AboutUs,.Partners,.header,.Documentations , .Values,.ArtSection,.Research,.Sponsers,.footer"
+    );
 
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
@@ -31,37 +42,28 @@ $(document).ready(function () {
 
   window.addEventListener("scroll", PinkSeperatorAnim);
 
-
-
   // Add 'active' class when the screen is loaded
-  $('header.header').addClass('active');
+  $("header.header").addClass("active");
 
   // Wait 4 seconds and add 'active' class again
   setTimeout(function () {
-    $('header.header').addClass('again');
+    $("header.header").addClass("again");
   }, 2000);
 
   if (performance.navigation.type === 1) {
     // Scroll to the top of the page
-    $('html, body').scrollTop(0);
+    $("html, body").scrollTop(0);
   }
 });
 
 $(window).scroll(function () {
-  var navbarHeight = $('.navbar').outerHeight(); // Get the height of the navbar
-  var imagePartOffsetTop = $('.ImagePart img').offset().top; // Get the top offset of the ImagePart section
+  var navbarHeight = $(".navbar").outerHeight(); // Get the height of the navbar
+  var imagePartOffsetTop = $(".ImagePart img").offset().top; // Get the top offset of the ImagePart section
   var scrollTop = $(window).scrollTop(); // Get the current scroll position
 
   if (scrollTop >= imagePartOffsetTop - navbarHeight) {
-    $('.navbar').css('z-index', '3000000'); // Change the z-index of the navbar
+    $(".navbar").css("z-index", "3000000"); // Change the z-index of the navbar
   } else {
-    $('.navbar').css('z-index', '1050'); // Reset the z-index of the navbar
+    $(".navbar").css("z-index", "1050"); // Reset the z-index of the navbar
   }
-
-
- 
 });
-
-
-
-

@@ -4,116 +4,81 @@
 }
 
 body {
-    direction: rtl;
+    direction: ltr;
     font-family: HT;
     overflow-x: hidden;
 
 }
 
 
-.SectionTitle {
-    color: #3B3077;
-    font-size: 48px;
-    font-weight: 800;
-    line-height: normal;
-    margin-bottom: 20px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
-.SectionTitle .Text{
-    z-index: 100;
-    display: block;
-}
-.SectionTitle .YellowCircle{
-    position: absolute;
-    left: 45%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-}
-.Paragraph {
-font-size: 20px;
-font-weight: 800;
-line-height: normal;;
-}
-.BlueText.disabled{
-    color: rgba(59, 48, 119,0.7);
-
-}
-.BlueText{
-   color: rgb(59, 48, 119);
-}
 /*************
 *************
 Navar
 **************
 **************/
 nav.navbar {
-    background-color: white;
+    background-color: #131313;
 }
 
+nav.navbar .navbar-brand img, nav.navbar .navbar-brand {
+    mix-blend-mode: lighten;
+}
 
 nav.navbar .navbar-collapse .navbar-nav .nav-link {
-    color: #3B3077;
-    margin-left: 20px;
-    font-size: 20px;
-    font-weight: 800;
-    line-height: normal;
+    color: #DADADA;
+    margin-right: 20px;
+    font-size: 16px;
+    line-height: 24px;
     width: fit-content;
-    opacity: 0.6;
+    z-index: 300000;
 }
 
 nav.navbar .navbar-collapse .navbar-nav .nav-link.active, nav.navbar .navbar-collapse .navbar-nav .nav-link:hover, nav.navbar .form-select:hover {
-    color: #3B3077;
+    color: white;
     position: relative;
     cursor: pointer;
-    font-weight: 900;
-    opacity: 1;
+    font-weight: 600;
+
+}
+
+nav.navbar .navbar-collapse .navbar-nav .nav-link.active .roundedActiveLink, nav.navbar .navbar-collapse .navbar-nav .nav-link:hover .roundedActiveLink {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #C5B2A3;
+    position: absolute;
+    right: 50%;
+    bottom: -5%;
+    transform: translateX(50%);
+}
+
+nav.navbar .form-select {
+    width: fit-content;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    color: #DADADA;
+    box-shadow: none;
 
 
 }
 
+nav.navbar .form-select option {
+    color: black;
+}
+
 nav.navbar .navbar-toggler {
-    color: #3B3077;
+    color: white;
     border: none;
     box-shadow: none;
     font-size: 24px;
 }
 
-nav.navbar .ContactSartBtn {
-    background-color: #EFD358;
-    display: flex;
-    height: 51px;
-    padding: 12px 24px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    color: #3B3077;
-    text-decoration: none;
-    border-radius: 50px;
-    transition: 0.3s ease all;
-}
-
-nav.navbar .ContactSartBtn img {
-    width: 40px;
-    transition: 0.3s ease all;
-
-}
-
-nav.navbar .ContactSartBtn:hover {
-    background-color: #3B3077;
-    color: white;
-}
-
-nav.navbar .ContactSartBtn:hover img {
-    filter: brightness(0) invert(1);
+nav.navbar .sideNavButtons select {
+    opacity: 0;
+    visibility: hidden;
 }
 
 /*************
@@ -128,89 +93,127 @@ End Navar
 Header
 **************
 **************/
-header.header h1 {
+header.header {
+    background-image: url(../images/Banner\ Bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
     position: relative;
+}
+
+header.header .MiddlePattern {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+header.header .MiddlePattern.BigPatternBanner {
+    width: 50%;
+}
+
+header.header .SidePattern {
+    position: absolute;
+    bottom: 5%;
+    left: -10%;
+}
+
+header.header .HeaderText img {
+    mix-blend-mode: lighten;
+    width: 50%;
+}
+
+header.header .HeaderText h1 {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 78px;
+    color: white;
+    margin: 30px 0;
+}
+
+header.header .HeaderText h1 span {
+    color: #C5B2A3;
+}
+
+header.header .HeaderText h2 {
+    font-size: 24px;
+    line-height: 150%;
+
+    font-weight: 800;
+    color: #DADADA;
+}
+
+header.header .HeaderText a.ServicesLink, section.ContactU .formPart form button {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-header.header h1 .HeaderTitle {
-    font-size: 67px;
-    font-weight: 800;
-    line-height: normal;
-    text-align: center;
-    color: #3B3077;
-    z-index: 10000000;
-    width: fit-content;
-}
-
-h1 .YellowCircle {
-    position: absolute;
-    left: 40%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-}
-
-header.header h2 {
-    color: #3b3077b5;
-    font-size: 32px;
-    font-weight: 800;
-    line-height: normal;
-    text-align: center;
-}
-
-
-/*****
-Carousel Header
-*****/
-.CarouselPart {
-    height: 80vh;
-    flex-direction: row-reverse;
-    align-items: stretch;
-    border-radius: 20px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    color: #131313;
+    background: #C5B2A3;
+    gap: 8px;
+    text-decoration: none;
+    padding: 15px 35px;
+    margin-top: 20px;
+    transition: 0.5s ease all;
     overflow: hidden;
-    position: relative;
+    border: none;
+}
+
+header.header .HeaderText a.ServicesLink svg, section.ContactU .formPart form button svg {
+    transition: 0.5s ease all;
 
 }
 
-.CarouselPart .CarouselItem {
-    width: 8%;
-    height: 100%;
-    transition: width 0.5s ease;
+section.ContactU .formPart form button {
+    border: 2px solid #C5B2A3;
 }
 
-.CarouselPart .CarouselItem.active {
-    width: 76%;
-}
-
-.CarouselDots {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.CarouselDots {
-    position: absolute;
-    left: 20px;
-    bottom: 20px;
-}
-
-.CarouselDot {
-    width: 12px;
-    height: 12px;
+header.header .HeaderText a:hover, section.ContactU .formPart form button:hover {
     background-color: white;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-    opacity: 0.5;
+    color: #C5B2A3;
+
+
 }
 
-.CarouselDot.active {
-    opacity: 1;
+header.header .HeaderText a:hover svg, section.ContactU .formPart form button:hover svg {
+    transform: translateX(300%);
 }
 
+header.header .ImagePart {
+    position: relative;
+}
+
+header.header .ImagePart img {
+    z-index: 100;
+    width: 90%;
+    z-index: 2050;
+
+}
+
+header.header .ImagePart .pinkRectangle {
+    background: #C5B2A3;
+    position: absolute;
+    width: 73%;
+    height: 130px;
+    bottom: 4%;
+
+    right: 0%;
+
+}
+
+header.header .blueRectangle {
+    background: #4762B3;
+    position: absolute;
+    width: 230px;
+    height: 95%;
+    top: 0%;
+    right: 15%;
+    z-index: 2000;
+}
 
 /*************
 *************
@@ -220,16 +223,129 @@ end Header
 
 /*************
 *************
+About Us
+**************
+**************/
+section.AboutUs {
+    position: relative;
+}
+
+section.AboutUs .Title, section.Sponsers .Title,section.BlogCards .Title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    color: #131313;
+
+}
+
+section.AboutUs p {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #494949;
+    width: 66%;
+}
+
+
+
+section.AboutUs .ImgRow {
+    z-index: 10;
+    position: relative;
+}
+
+section.AboutUs .SidePattern {
+    position: absolute;
+    left: -6%;
+    top: 15%;
+    z-index: 0;
+}
+
+section.AboutUs .SidePatternTwo {
+    position: absolute;
+    right: 6%;
+    top: 25%;
+    z-index: 0;
+}
+
+/*************
+*************
+end About Us
+**************
+**************/
+/*************
+*************
 Blog Cards
 **************
 **************/
+section.BlogCards .carousel {
+    padding-bottom: 4vw;
+}
+section.BlogCards .flickity-enabled.is-draggable .flickity-viewport{
+    height: 550px !important;
+}
+section.BlogCards .carousel-cell {
+    width: 30vw;
+    max-resolution: 4vw;
+    margin-left: 4vw;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 24px;
+    height: 100%;
+
+}
+
 section.BlogCards .card {
-    background-color: transparent;
-    border: none;
+    border: 1px solid #C5B2A3;
+    border-radius: 0px;
+    height: 100%;
 }
-section.BlogCards .card img{
-    border-radius: 15px;
+section.BlogCards .card img.card-img-top{
+    max-height: 250px;
+    min-height: 250px;
 }
+section.BlogCards .card .card-body {
+    text-align: left;
+    padding: 0px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+section.BlogCards .card .card-body .card-title {
+    color: #131313;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 150%;
+}
+
+section.BlogCards .card-body  .card-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    color: #494949;
+font-size: 20px;
+font-weight: 800;
+line-height: normal;
+}
+section.BlogCards .flickity-page-dots .dot {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(197, 178, 163, 0.9);
+  }
+  
+  section.BlogCards .flickity-page-dots .dot.is-selected {
+    width: 24px;
+    height: 24px;
+    background-color: rgba(197, 178, 163, 1);
+  }
+
 
 /*************
 *************
@@ -270,7 +386,7 @@ section.Partners .card .card-body .card-text {
 
 }
 
-section.Partners .card .card-body hr, section.BlogCards .card .card-body hr {
+section.Partners .card .card-body hr,section.BlogCards .card .card-body hr  {
     background-color: #b7b7b7;
     border: 1px solid #b7b7b7;
 
@@ -278,7 +394,7 @@ section.Partners .card .card-body hr, section.BlogCards .card .card-body hr {
     width: 100%;
 }
 
-section.Partners .card .card-body a, section.BlogCards .card .card-body a {
+section.Partners .card .card-body a ,section.BlogCards .card .card-body a{
     font-weight: 800;
     font-size: 24px;
     line-height: 75px;
@@ -288,13 +404,13 @@ section.Partners .card .card-body a, section.BlogCards .card .card-body a {
     box-shadow: none;
 }
 
-section.Partners .card .card-body a img, section.BlogCards .card .card-body a img {
+section.Partners .card .card-body a img,section.BlogCards .card .card-body a img {
     transition: transform .7s ease-in-out;
-
+    transform: rotate(180deg);
 }
 
-section.Partners .card .card-body a:hover img, section.BlogCards .card .card-body a:hover img {
-    transform: rotate(-360deg);
+section.Partners .card .card-body a:hover img,section.BlogCards .card .card-body a:hover img {
+    transform: rotate(-180deg);
 }
 
 /*************
@@ -319,13 +435,13 @@ section.Documentations p.Paragraph, section.Documentations .Services ul li, sect
     line-height: 24px;
     color: #494949;
     margin: auto;
-    padding-right: 47px;
+    padding-left: 47px;
 
 }
 
 section.Documentations .TopPart p.Paragraph, section.ArtSection .TopPart p.Paragraph, section.Research .TopPart p.Paragraph {
     width: 75%;
-    padding-right: 0px;
+    padding-left: 0px;
     text-align: center;
 
 }
@@ -334,16 +450,16 @@ section.Documentations .Values .ParaTitle, section.ArtSection .Values .ParaTitle
     font-weight: 800;
     font-size: 32px;
     line-height: 150%;
-    text-align: right;
+    text-align: left;
 }
 
 section.Documentations .Services ul, section.ArtSection .Services ul, section.Research .Services ul {
-    padding-right: 70px;
+    padding-left: 70px;
 
 }
 
 section.Documentations .Services ul li, section.ArtSection .Services ul li, section.Research .Services ul li {
-    padding-right: 0px;
+    padding-left: 0px;
 }
 
 section.ArtSection .SartLogo {
@@ -362,10 +478,12 @@ section.ArtSection .ServicesLink {
 section.ArtSection .ServicesLink img {
     width: 46px;
     transition: 1s ease all;
+    transform: rotate(180deg);
+
 }
 
 section.ArtSection .ServicesLink:hover img {
-    transform: rotate(-360deg);
+    transform: rotate(-180deg);
 }
 
 /*************
@@ -386,7 +504,7 @@ section.Sponsers {
 section.Sponsers .Pattern1 {
     position: absolute;
     top: -20%;
-    right: -2%;
+    left: -2%;
     z-index: 0;
 
 }
@@ -394,7 +512,7 @@ section.Sponsers .Pattern1 {
 section.Sponsers .Pattern2 {
     position: absolute;
     top: -20%;
-    left: -2%;
+    right: -2%;
     z-index: 0;
 }
 
@@ -449,7 +567,7 @@ section.ContactU .formPart form {
 
 section.ContactU .formPart form label.form-label {
     color: #131313;
-    text-align: right;
+    text-align: left;
     font-size: 20px;
     font-weight: 800;
 }
@@ -458,7 +576,7 @@ section.ContactU .formPart form input, section.ContactU .formPart form textarea 
     padding: 24px 16px;
     border-radius: 8px;
     border: 1px solid #DBDBDB;
-    direction: rtl;
+    direction: ltr;
     font-size: 16px;
     font-weight: 900;
     box-shadow: none;
@@ -579,7 +697,7 @@ header.header .ImagePart, .header .HeaderText {
 }
 
 header.header.active.again .MiddlePattern img, .header.header.active.again .SidePattern {
-    transform: rotate(360deg) !important;
+    transform: rotate(-360deg) !important;
 }
 
 .OverflowHidden {
@@ -588,7 +706,7 @@ header.header.active.again .MiddlePattern img, .header.header.active.again .Side
 }
 
 .header .HeaderText a.ServicesLink {
-    transform: translateX(150%);
+    transform: translateX(-150%);
     transition: 2s ease all !important;
     transition-delay: 2s !important;
 }
@@ -613,13 +731,13 @@ header.header.active.again .MiddlePattern img, .header.header.active.again .Side
 }
 
 .header .pinkRectangle {
-    transform: translateX(-150%);
+    transform: translateX(150%);
     transition: 2s ease all;
     opacity: 1 !important;
 }
 
 .header .ImagePart img {
-    transform: translateX(-150%);
+    transform: translateX(150%);
     transition: 2s ease all;
     opacity: 1;
     transition-delay: 2s;
@@ -646,16 +764,16 @@ header.header.active.again .MiddlePattern img, .header.header.active.again .Side
 
 .Values .ParaTitle {
     transition: 1.5s ease all;
-    transform: translateX(150px);
+    transform: translateX(-150px);
 }
 
-.Values .Sart, section.BlogCards .carousel {
+.Values .Sart,section.BlogCards .carousel {
     transition: 1.5s ease all;
-    transform: translateX(150px);
+    transform: translateX(-150px);
     opacity: 0;
 }
 
-.Values.active .ParaTitle, .Values.active .Paragraph, section.BlogCards.active .carousel, .Values.active .Services ul, .Values.active .Sart {
+.Values.active .ParaTitle, .Values.active .Paragraph,section.BlogCards.active .carousel , .Values.active .Services ul, .Values.active .Sart {
     transform: translateX(0px);
     opacity: 1;
 }
@@ -666,16 +784,16 @@ header.header.active.again .MiddlePattern img, .header.header.active.again .Side
 
 .Values .Paragraph, .Values .Services ul {
     transition: 3.5s ease all;
-    transform: translateX(150px);
+    transform: translateX(-150px);
 }
 
 .footer .FooterRow img, .footer .FooterRow a {
-    transform: translateX(150%);
+    transform: translateX(-150%);
     transition: 1.5s ease all;
 }
 
 .footer .FooterRow .socialMedia a, .footer .FooterRow p {
-    transform: translateX(-150%);
+    transform: translateX(150%);
     transition: 2.5s ease all;
 }
 
@@ -694,7 +812,7 @@ section.Partners {
 }
 
 .Documentations .TopPart {
-    transform: translateX(-150%);
+    transform: translateX(150%);
 
 }
 
@@ -709,12 +827,12 @@ section.Partners {
 }
 
 .ArtSection .IMGPart {
-    transform: translateX(-150%);
+    transform: translateX(150%);
 
 }
 
 .Documentations .IMGPart, .Research .IMGPart {
-    transform: translateX(150%);
+    transform: translateX(-150%);
 
 }
 
@@ -741,7 +859,7 @@ section.Partners.active {
 }
 
 .BigImg img {
-    transform: translateX(-150%);
+    transform: translateX(150%);
     transition: 3.5s ease all;
 }
 
@@ -754,7 +872,7 @@ section.Partners.active {
 }
 
 .header.active .MiddlePattern img, .header.active .SidePattern {
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
     opacity: 1;
 }
 
@@ -764,7 +882,7 @@ section.Partners.active {
 }
 
 .TwoImageAboutUs .One {
-    transform: translateX(150%);
+    transform: translateX(-150%);
     transition: 3s ease all;
 
 }
@@ -786,7 +904,7 @@ section.AboutUs a.ServicesLink {
 }
 
 .AboutUs .TextRow .Title {
-    transform: translate(-150%, 150%);
+    transform: translate(150%, 150%);
     transition: 4s ease all;
 }
 
@@ -796,7 +914,7 @@ section.AboutUs a.ServicesLink {
 }
 
 .AboutUs .TextRow p {
-    transform: translate(-150%, 150%);
+    transform: translate(150%, 150%);
     opacity: 0;
     transition: 5s ease all;
 }
@@ -851,7 +969,7 @@ End Top Animation
 @media (min-width: 1400px) {
 
     header.header .blueRectangle {
-        left: 14%;
+        right: 14%;
         width: 200px;
     }
 
@@ -876,7 +994,7 @@ End Top Animation
     }
 
     header.header .blueRectangle {
-        left: 15%;
+        right: 15%;
         width: 200px;
     }
 
@@ -886,24 +1004,19 @@ End Top Animation
     header.header .blueRectangle {
         display: none;
     }
-
-    section.BlogCards .card img.card-img-top {
+    section.BlogCards .card img.card-img-top{
         max-height: 200px;
-        min-height: 200px;
+    min-height: 200px;
     }
-
-    section.BlogCards .card .card-body .card-title {
+    section.BlogCards .card .card-body .card-title{
         font-size: 29px;
     }
-
-    section.BlogCards .card-body .card-text {
+    section.BlogCards .card-body .card-text{
         font-size: 18px;
     }
-
-    section.BlogCards .flickity-enabled.is-draggable .flickity-viewport {
+    section.BlogCards .flickity-enabled.is-draggable .flickity-viewport{
         height: 500px !important;
     }
-
     div#navbarNavDropdown {
         justify-content: center !important;
     }
@@ -946,7 +1059,7 @@ End Top Animation
     }
 
     section.AboutUs .TwoImageAboutUs div.secondImg img {
-        float: left;
+        float: right;
     }
 }
 
@@ -954,17 +1067,14 @@ End Top Animation
     nav.navbar .navbar-collapse .navbar-nav .nav-link {
         font-size: 30px;
         margin-bottom: 40px;
-        margin-left: 0px;
+        margin-right: 0px;
     }
-
     section.BlogCards .card .card-body a {
         line-height: 40px;
     }
-
-    section.BlogCards .carousel-cell {
+    section.BlogCards .carousel-cell{
         width: 35vw;
     }
-
     .navbar-nav {
 
         height: 100vh;
@@ -985,9 +1095,9 @@ End Top Animation
     nav.navbar .navbar-collapse {
         position: fixed;
         top: 50%;
-        left: 50%;
+        right: 50%;
         background-color: black;
-        transform: translate(-50%, -50%);
+        transform: translate(50%, -50%);
         width: 100vw;
     }
 
@@ -1013,32 +1123,25 @@ End Top Animation
         font-size: 30px;
         margin-bottom: 40px;
     }
-
     section.AboutUs .Title, section.Sponsers .Title, section.BlogCards .Title {
         font-size: 45px;
     }
-
-    section.BlogCards .carousel-cell {
+    section.BlogCards .carousel-cell{
         width: 45vw;
     }
-
     section.BlogCards .card .card-body a {
         line-height: 30px;
     }
-
-    section.BlogCards .card .card-body a img {
+    section.BlogCards .card .card-body a img{
         width: 50px;
     }
-
-    section.BlogCards .flickity-enabled.is-draggable .flickity-viewport {
+    section.BlogCards .flickity-enabled.is-draggable .flickity-viewport{
         height: 452px !important;
     }
-
     section.BlogCards .card img.card-img-top {
         max-height: 170px;
         min-height: 170px;
     }
-
     section.ContactU .formPart form {
         width: 90%;
     }
@@ -1081,7 +1184,7 @@ End Top Animation
     }
 
     .socialMedia {
-        margin-right: 0 !important;
+        margin-left: 0 !important;
     }
 }
 
@@ -1091,51 +1194,41 @@ End Top Animation
         font-size: 37px;
         line-height: 50px;
     }
-
     section.BlogCards .carousel-cell {
         width: 52vw;
     }
-
     section.BlogCards .card .card-body .card-title {
         font-size: 24px;
     }
-
     section.BlogCards .card-body .card-text {
         font-size: 16px;
     }
-
     section.BlogCards .flickity-enabled.is-draggable .flickity-viewport {
         height: 400px !important;
     }
-
-    section.BlogCards .card .card-body a {
+    section.BlogCards .card .card-body a{
         font-size: 20px;
         line-height: 25px;
     }
-
     section.BlogCards .card .card-body a img {
         width: 40px;
     }
-
+    
     section.AboutUs .Title, section.Sponsers .Title, section.BlogCards .Title {
         font-size: 40px;
     }
-
-    section.BlogCards .flickity-page-dots .dot.is-selected {
-        width: 20px;
-        height: 20px;
-    }
-
-    section.BlogCards .flickity-page-dots .dot {
-        width: 16px;
-        height: 16px;
-    }
-
+section.BlogCards .flickity-page-dots .dot.is-selected {
+    width: 20px;
+    height: 20px;
+}
+section.BlogCards .flickity-page-dots .dot{
+    width: 16px;
+    height: 16px;
+}
     section.BlogCards .card img.card-img-top {
         max-height: 150px;
         min-height: 150px;
     }
-
     header.header .HeaderText h2 {
         font-size: 18px;
     }
