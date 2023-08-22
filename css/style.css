@@ -56,6 +56,7 @@ body {
 a {
     text-decoration: none !important;
 }
+
 img[imgsrc] {
 
     background-color: #eee;
@@ -156,7 +157,7 @@ header.header h1 .HeaderTitle {
     line-height: normal;
     text-align: center;
     color: #3B3077;
-    z-index: 10000000;
+    z-index: 10;
     width: fit-content;
 }
 
@@ -238,7 +239,7 @@ end Header
 Blog Cards
 **************
 **************/
-section.BlogCards .YellowCircle{
+section.BlogCards .YellowCircle {
     left: 42%;
 }
 
@@ -264,9 +265,10 @@ end Blog Cards
 Feedback
 **************
 **************/
-section.Feedback .YellowCircle{
+section.Feedback .YellowCircle {
     left: 23%;
 }
+
 section.Feedback .GreyBox {
     border-radius: 8px;
     background: #F6F6F6;
@@ -302,9 +304,10 @@ end Feedback
 Estefsar
 **************
 **************/
-section.Estefsar .YellowCircle{
+section.Estefsar .YellowCircle {
     left: 40%;
 }
+
 section.Estefsar .ContactSartBtn {
     margin: auto;
     color: white;
@@ -312,271 +315,55 @@ section.Estefsar .ContactSartBtn {
     background-color: #3B3077;
     text-align: center;
     padding: 7px 30px;
+    transition: 0.5s ease all;
 }
-section.Estefsar .ContactSartBtn  img{
+
+section.Estefsar .ContactSartBtn:hover {
+    background-color: #EFD358;
+    color: #3B3077;
+
+}
+
+section.Estefsar .ContactSartBtn img {
     filter: brightness(0) invert(1);
-}
-/*************
-*************
-end Estefsar
-**************
-**************/
-
-
-/*************
-*************
-Our Partners
-**************
-**************/
-section.Partners {
-    background: #C5B2A3;
-}
-
-section.Partners .card {
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.07);
-    border-radius: none;
-    border: none;
-}
-
-section.Partners .card .card-body .card-title {
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 44px;
-    color: #131313;
-    padding-right: 20%;
-}
-
-section.Partners .card .card-body .card-text {
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 24px;
-    color: #494949;
+    transition: 0.5s ease all;
 
 }
 
-section.Partners .card .card-body hr, section.BlogCards .card .card-body hr {
-    background-color: #b7b7b7;
-    border: 1px solid #b7b7b7;
+section.Estefsar .ContactSartBtn:hover img {
+    filter: brightness(100%) invert(0);
 
-    margin: 15px 0px;
+}
+
+section.Estefsar .ImagesPart .PuprleBG {
+    background-color: #3B3077;
+    border-radius: 16px;
+    height: 300px;
     width: 100%;
-}
-
-section.Partners .card .card-body a, section.BlogCards .card .card-body a {
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 75px;
-    color: #494949;
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-}
-
-section.Partners .card .card-body a img, section.BlogCards .card .card-body a img {
-    transition: transform .7s ease-in-out;
-
-}
-
-section.Partners .card .card-body a:hover img, section.BlogCards .card .card-body a:hover img {
-    transform: rotate(-360deg);
-}
-
-/*************
-*************
-End Our Partners
-**************
-**************/
-
-
-/*************
-*************
-Documentations
-**************
-**************/
-section.Documentations .IMGPart img, section.ArtSection .IMGPart img, section.Research .IMGPart img {
-    width: 100%;
-}
-
-section.Documentations p.Paragraph, section.Documentations .Services ul li, section.ArtSection p.Paragraph, section.ArtSection .Services ul li, section.Research p.Paragraph, section.Research .Services ul li {
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 24px;
-    color: #494949;
-    margin: auto;
-    padding-right: 47px;
-
-}
-
-section.Documentations .TopPart p.Paragraph, section.ArtSection .TopPart p.Paragraph, section.Research .TopPart p.Paragraph {
-    width: 75%;
-    padding-right: 0px;
-    text-align: center;
-
-}
-
-section.Documentations .Values .ParaTitle, section.ArtSection .Values .ParaTitle, section.Research .Values .ParaTitle {
-    font-weight: 800;
-    font-size: 32px;
-    line-height: 150%;
-    text-align: right;
-}
-
-section.Documentations .Services ul, section.ArtSection .Services ul, section.Research .Services ul {
-    padding-right: 70px;
-
-}
-
-section.Documentations .Services ul li, section.ArtSection .Services ul li, section.Research .Services ul li {
-    padding-right: 0px;
-}
-
-section.ArtSection .SartLogo {
-    width: 86px !important;
-
-}
-
-section.ArtSection .ServicesLink {
-    font-size: 24px;
-    font-weight: 800;
-    color: #4762B3;
-    text-decoration: none;
-    width: fit-content;
-}
-
-section.ArtSection .ServicesLink img {
-    width: 46px;
-    transition: 1s ease all;
-}
-
-section.ArtSection .ServicesLink:hover img {
-    transform: rotate(-360deg);
-}
-
-/*************
-*************
-End Documentations
-**************
-**************/
-
-/*************
-*************
-Sponsers
-**************
-**************/
-section.Sponsers {
-    overflow: hidden;
-}
-
-section.Sponsers .Pattern1 {
-    position: absolute;
-    top: -20%;
-    right: -2%;
-    z-index: 0;
-
-}
-
-section.Sponsers .Pattern2 {
-    position: absolute;
-    top: -20%;
-    left: -2%;
-    z-index: 0;
-}
-
-section.Sponsers .SponsersImg {
-    z-index: 100;
-    position: relative;
-}
-
-section.Sponsers .SponserDiv {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
 }
 
-section.Sponsers .SponserDiv img {
-    width: 50%;
-}
-
-section.Sponsers .SponserDiv.AnovaImg img {
-    width: 80%;
-}
-
-/*************
-*************
-End Sponsers
-**************
-**************/
-
-
-/*************
-*************
-Contact Us
-**************
-**************/
-section.ContactU .formPart h1 {
-    color: #34353A;
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 150%;
-}
-
-section.ContactU .formPart h6 {
-    color: #494949;
-    font-size: 20px;
-    font-weight: 800;
-}
-
-section.ContactU .formPart form {
-    width: 75%;
+section.Estefsar .ImagesPart .ImgRow {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    justify-content: start;
+    width: 100%;
+    z-index: 10;
     margin-top: 30px;
 }
 
-section.ContactU .formPart form label.form-label {
-    color: #131313;
-    text-align: right;
-    font-size: 20px;
-    font-weight: 800;
-}
-
-section.ContactU .formPart form input, section.ContactU .formPart form textarea {
-    padding: 24px 16px;
-    border-radius: 8px;
-    border: 1px solid #DBDBDB;
-    direction: rtl;
-    font-size: 16px;
-    font-weight: 900;
-    box-shadow: none;
+section.Estefsar .ImagesPart .ImgRow .SmallImg {
+    height: 110%;
 }
 
 /*************
 *************
-End Contact Us
-**************
-**************/
-
-/*************
-*************
-Blog Part
-**************
-**************/
-section.BLogPart p.Paragraph {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 160%;
-    letter-spacing: -1px;
-    color: #494949;
-}
-
-section.BLogPart .BlogImg {
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-
-/*************
-*************
-End Blog Part
+end Estefsar
 **************
 **************/
 
@@ -587,16 +374,13 @@ Footer
 **************
 **************/
 footer.footer {
-    background-color: black;
+    background-color: white;
     overflow: hidden;
 }
 
-.container {
-    overflow: hidden;
-}
 
 footer.footer img {
-    width: 150px;
+    width: 120px;
 }
 
 footer.footer a, footer.footer p {
@@ -604,18 +388,18 @@ footer.footer a, footer.footer p {
     font-size: 20px;
     line-height: 150%;
     text-align: center;
-    color: #FFFFFF;
+    color: #3B3077;
     text-decoration: none;
     transition: 0.3s ease all;
 }
 
 footer.footer a:hover {
-    color: #dddddd;
+    color: #2a2255;
 }
 
 footer.footer .socialMedia a {
     font-size: 30px;
-    color: #C5B2A3;
+    color: #3B3077;
 
 }
 
@@ -628,14 +412,6 @@ footer.footer .socialMedia a:hover {
 End Footer
 **************
 **************/
-.BackImg {
-    z-index: 0 !important;
-}
-
-h1, h2, p, a {
-    z-index: 1000;
-}
-
 
 /*********************
 *********************
@@ -932,107 +708,11 @@ End Top Animation
 *********************************************** Media***********************************
 ****************************************************************************************
 ****************************************************************************************/
-@media (min-width: 1400px) {
+@media (min-width: 1400px) {}
 
-    header.header .blueRectangle {
-        left: 14%;
-        width: 200px;
-    }
+@media (max-width: 1400px) {}
 
-    header.header .ImagePart img {
-        width: 75%;
-    }
-}
-
-@media (max-width: 1400px) {
-    header.header .ImagePart img {
-        width: 70%;
-    }
-
-    header.header .ImagePart .pinkRectangle {
-        background: #C5B2A3;
-        position: absolute;
-        width: 60%;
-        height: 130px;
-        bottom: 4%;
-
-
-    }
-
-    header.header .blueRectangle {
-        left: 15%;
-        width: 200px;
-    }
-
-}
-
-@media (max-width: 1200px) {
-    header.header .blueRectangle {
-        display: none;
-    }
-
-    section.BlogCards .card img.card-img-top {
-        max-height: 200px;
-        min-height: 200px;
-    }
-
-    section.BlogCards .card .card-body .card-title {
-        font-size: 29px;
-    }
-
-    section.BlogCards .card-body .card-text {
-        font-size: 18px;
-    }
-
-    section.BlogCards .flickity-enabled.is-draggable .flickity-viewport {
-        height: 500px !important;
-    }
-
-    div#navbarNavDropdown {
-        justify-content: center !important;
-    }
-
-    header.header .ImagePart img {
-        z-index: 100;
-    }
-
-    nav.navbar .form-select {
-        z-index: 20000;
-    }
-
-    header.header {
-        height: unset;
-    }
-
-    header.header .HeaderText {
-        align-items: center !important;
-    }
-
-    header.header .HeaderText h1, header.header .HeaderText h2 {
-        text-align: center;
-    }
-
-    section.AboutUs p {
-        width: 75% !important;
-    }
-
-    section.AboutUs .TwoImageAboutUs {
-        flex-direction: row !important;
-        margin-bottom: 25px;
-    }
-
-    section.AboutUs .TwoImageAboutUs div {
-        width: 50%;
-    }
-
-    section.AboutUs .TwoImageAboutUs div img {
-        width: 97% !important;
-    }
-
-    section.AboutUs .TwoImageAboutUs div.secondImg img {
-        float: left;
-    }
-}
+@media (max-width: 1200px) {}
 
 @media (max-width: 991px) {
     nav.navbar .navbar-collapse .navbar-nav .nav-link {
@@ -1041,26 +721,14 @@ End Top Animation
         margin-left: 0px;
     }
 
-    section.BlogCards .card .card-body a {
-        line-height: 40px;
-    }
-
-    section.BlogCards .carousel-cell {
-        width: 35vw;
-    }
 
     .navbar-nav {
-
+        background-color: white;
         height: 100vh;
         justify-content: center;
         align-items: center;
     }
 
-    nav.navbar .navbar-collapse .navbar-nav .nav-link.active .roundedActiveLink, nav.navbar .navbar-collapse .navbar-nav .nav-link:hover .roundedActiveLink {
-        width: 15px;
-        height: 15px;
-        bottom: -50%;
-    }
 
     nav.navbar .sideNavButtons, nav.navbar .navbar-brand {
         z-index: 10000;
@@ -1075,9 +743,7 @@ End Top Animation
         width: 100vw;
     }
 
-    section.Documentations .IMGPart img, section.ArtSection .IMGPart img, section.Research .IMGPart img {
-        width: 75%;
-    }
+
 
     footer.footer .FooterRow {
         flex-direction: column;
@@ -1087,9 +753,7 @@ End Top Animation
         margin-bottom: 10px;
     }
 
-    .ContactUsImg img {
-        width: 50% !important;
-    }
+
 }
 
 @media (max-width: 767px) {
@@ -1098,173 +762,98 @@ End Top Animation
         margin-bottom: 40px;
     }
 
-    section.AboutUs .Title, section.Sponsers .Title, section.BlogCards .Title {
-        font-size: 45px;
-    }
-
-    section.BlogCards .carousel-cell {
-        width: 45vw;
-    }
-
-    section.BlogCards .card .card-body a {
-        line-height: 30px;
-    }
-
-    section.BlogCards .card .card-body a img {
-        width: 50px;
-    }
-
-    section.BlogCards .flickity-enabled.is-draggable .flickity-viewport {
-        height: 452px !important;
-    }
-
-    section.BlogCards .card img.card-img-top {
-        max-height: 170px;
-        min-height: 170px;
-    }
-
-    section.ContactU .formPart form {
-        width: 90%;
-    }
-
-    header.header .HeaderText h1 {
-        font-size: 41px;
-    }
-
-    section.AboutUs p {
-        width: 100% !important;
-    }
-
-    section.Partners .card .card-body .card-text {
-        font-size: 13px;
-        line-height: 20px;
-    }
-
-    section.Partners .card .card-body a {
-        font-size: 18px;
-    }
-
-    section.Partners .card .card-body .card-title {
-        font-size: 30px;
-    }
-
-    section.Partners .card .card-body hr {
-        margin: 5px 0px;
-    }
-
-    section.Documentations .IMGPart img, section.ArtSection .IMGPart img, section.Research .IMGPart img {
-        width: 50%;
-    }
-
-    section.Partners .card .card-body a img {
-        width: 40px;
-    }
 
     .LogoSocialFooter {
         flex-direction: column;
+        align-items: center;
     }
 
     .socialMedia {
         margin-right: 0 !important;
     }
+
+    nav.navbar .ContactSartBtn {
+        height: 40px;
+        padding: 12px 15px;
+        font-size: 18px;
+    }
+
+    nav.navbar .ContactSartBtn img {
+        width: 30px;
+    }
+
+    header.header h1 .HeaderTitle {
+        font-size: 50px;
+    }
+
+    h1 .YellowCircle {
+        left: 20%;
+    }
+
+    header.header h2 {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .CarouselPart {
+        height: 20vh;
+    }
+
+    .CarouselDot {
+        width: 9px;
+        height: 9px;
+    }
+
+    .SectionTitle {
+        font-size: 40px;
+        margin-bottom: 5px !important;
+    }
+
+    section.BlogCards .YellowCircle {
+        left: 25%;
+    }
+
+    .Paragraph {
+        font-size: 16px;
+    }
+
+
+    section.Feedback .GreyBox .SmallText {
+        font-size: 14px;
+    }
+
+    section.Feedback .GreyBox .BigText {
+        font-size: 20px;
+    }
+    .SectionTitle .YellowCircle {
+        left: 30%;
+    }
+    section.Estefsar .ImagesPart .ImgRow .SmallImg{
+        height: unset;
+        width: 27%;
+    }
+    section.Estefsar .ImagesPart .ImgRow .bigImg{
+    width: 46%;
+    }
+    section.Estefsar .ImagesPart .PuprleBG {
+       
+        height: 75px;
+    }
+    footer.footer .Footerrow {
+        flex-direction: column;
+    }
+    section.Estefsar .YellowCircle {
+        left: 17%;
+    }
 }
 
 
 @media (max-width: 575px) {
-    header.header .HeaderText h1 {
-        font-size: 37px;
-        line-height: 50px;
-    }
-
-    section.BlogCards .carousel-cell {
-        width: 52vw;
-    }
-
-    section.BlogCards .card .card-body .card-title {
-        font-size: 24px;
-    }
-
-    section.BlogCards .card-body .card-text {
-        font-size: 16px;
-    }
-
-    section.BlogCards .flickity-enabled.is-draggable .flickity-viewport {
-        height: 400px !important;
-    }
-
-    section.BlogCards .card .card-body a {
-        font-size: 20px;
-        line-height: 25px;
-    }
-
-    section.BlogCards .card .card-body a img {
-        width: 40px;
-    }
-
-    section.AboutUs .Title, section.Sponsers .Title, section.BlogCards .Title {
-        font-size: 40px;
-    }
-
-    section.BlogCards .flickity-page-dots .dot.is-selected {
-        width: 20px;
-        height: 20px;
-    }
-
-    section.BlogCards .flickity-page-dots .dot {
-        width: 16px;
-        height: 16px;
-    }
-
-    section.BlogCards .card img.card-img-top {
-        max-height: 150px;
-        min-height: 150px;
-    }
-
-    header.header .HeaderText h2 {
-        font-size: 18px;
-    }
-
-    section.AboutUs .Title, section.Sponsers .Title {
-        font-size: 40px;
-    }
-
-    section.AboutUs p, section.Documentations p.Paragraph, section.Documentations .Services ul li, section.ArtSection p.Paragraph, section.ArtSection .Services ul li, section.Research p.Paragraph, section.Research .Services ul li {
-        font-size: 15px;
-        line-height: 20px;
-    }
-
-    section.AboutUs a.ServicesLink, section.AboutUs .ImgRow {
-        margin-top: 0px !important;
-    }
-
-    section.Documentations .Values .ParaTitle, section.ArtSection .Values .ParaTitle, section.Research .Values .ParaTitle {
-        font-size: 25px;
-    }
 
     nav.navbar .navbar-collapse .navbar-nav .nav-link {
         font-size: 25px;
         margin-bottom: 45px;
     }
 
-    section.Partners .card .card-body a {
-        font-size: 24px;
-    }
 
-    section.Partners .card .card-body .card-text {
-        font-size: 17px;
-        line-height: 22px;
-    }
-
-    section.Partners .card .card-body .card-title {
-        font-size: 30px;
-    }
-
-    section.Partners .card .card-body a img {
-        width: unset;
-    }
-
-    section.Partners .card {
-        width: 75%;
-        margin: auto;
-    }
 }
