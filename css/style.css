@@ -457,7 +457,7 @@ Animation Top
 *********************/
 
 
-.header h1 .HeaderTitle,.header h2 ,.header .CarouselPart .CarouselItem,.ArtPartners .col-lg-3 img ,.YellowCircle , .SectionTitle .Text,.Feedback .GreyBox, .UnderText,.BlogCards .CardsPart .col-lg-3 .card,.footer .FooterRow p, .footer .FooterRow .socialMedia a, .footer .FooterRow img, .footer .FooterRow a {
+.header h1 .HeaderTitle,.header h2 ,.header .CarouselPart .CarouselItem,.Estefsar .ContactSartBtn,.Estefsar .ImgRow img,.Estefsar .PuprleBG,.ArtPartners .col-lg-3 img ,.YellowCircle , .SectionTitle .Text,.Feedback .GreyBox, .UnderText,.BlogCards .CardsPart .col-lg-3 .card,.footer .FooterRow p, .footer .FooterRow .socialMedia a, .footer .FooterRow img, .footer .FooterRow a {
     position: relative;
     opacity: 0;
     transition: 2s ease all ;
@@ -471,14 +471,16 @@ Animation Top
     width: 80px ;
     opacity: 1;
 }
-.BlogCards .CardsPart .col-lg-3 .card ,.Feedback .GreyBox,.ArtPartners .col-lg-3 img{
+.BlogCards .CardsPart .col-lg-3 .card ,.Feedback .GreyBox,.ArtPartners .col-lg-3 img,.Estefsar .PuprleBG,.Estefsar .ContactSartBtn{
     transform: translateY(150%);
     opacity: 0;
     transition: transform 2s ease, opacity 2.5s ease;
 }
+.Estefsar .PuprleBG{
+    transition: 1s ease all  !important;
+}
 
-
-.BlogCards.active .CardsPart .col-lg-3 .card.active,.Feedback.active .GreyBox.active,.ArtPartners.active .col-lg-3 img.active{
+.BlogCards.active .CardsPart .col-lg-3 .card.active,.Feedback.active .GreyBox.active,.Estefsar.active .PuprleBG,.Estefsar.active .ContactSartBtn,.ArtPartners.active .col-lg-3 img.active{
     transform: translateY(0%) !important;
     opacity: 1;
 }
@@ -521,10 +523,42 @@ Animation Top
 
 } 
 
+.Estefsar .ImgRow img.SmallOne{
+    transform: translate(50%,50%);
+    opacity: 0;
+    transition: transform 2s ease, opacity 3s ease !important;
+}
+.Estefsar.active .ImgRow img.SmallOne{
+    transform: translate(0%,0%);
+    opacity: 1;
+}
+.Estefsar .ImgRow img.SmallTwo{
+    transform: translate(-50%,50%);
+    opacity: 0;
+    transition: transform 2s ease, opacity 3s ease !important;
+}
+
+.Estefsar.active .ImgRow img.SmallTwo{
+    opacity: 1;
+    transform: translate(0%,0%);
+
+}
+.Estefsar .ImgRow img.bigImg{
+    transform: translate(0%,50%);
+    opacity: 0;
+    transition: transform 2s ease, opacity 3s ease !important;
+}
+
+.Estefsar.active .ImgRow img.bigImg{
+    opacity: 1;
+    transform: translate(0%,0%);
+
+}
+
 
 .OverflowHidden {
     overflow: hidden;
-    position: relative;
+    position: relative
 }
 
 .header .HeaderText a.ServicesLink {
@@ -866,7 +900,7 @@ End Top Animation
 
     section.Estefsar .ImagesPart .ImgRow .SmallImg {
         height: unset;
-        width: 27%;
+        width: 27% !important;
     }
 
     section.Estefsar .ImagesPart .ImgRow .bigImg {

@@ -80,7 +80,21 @@ $(window).scroll(function () {
 
 });
 
-$(".CardsPart .card,.Feedback .GreyBox,.ArtPartners .col-lg-3 img").each(function(index) {
+$(".CardsPart .card").each(function(index) {
+  var card = $(this);
+  setTimeout(function() {
+    card.addClass("active");
+  }, index * 300); // 500 milliseconds = 0.5 seconds
+});
+
+$(".Feedback .GreyBox").each(function(index) {
+  var card = $(this);
+  setTimeout(function() {
+    card.addClass("active");
+  }, index * 300); // 500 milliseconds = 0.5 seconds
+});
+
+$(".ArtPartners .col-lg-3 img").each(function(index) {
   var card = $(this);
   setTimeout(function() {
     card.addClass("active");
