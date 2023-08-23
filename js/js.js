@@ -19,12 +19,12 @@ $(document).ready(function () {
     $(targetClass).addClass("active");
     $(".CarouselDot.active").removeClass("active");
     $(this).addClass("active");
-});
-  
+  });
+
   /**Animation */
   function PinkSeperatorAnim() {
     var reveals = document.querySelectorAll(
-      ".BlogCards,.AboutUs,.Partners,.header,.Documentations , .Values,.ArtSection,.Research,.Sponsers,.footer"
+      ".BlogCards,.AboutUs,.header,.footer,.Feedback,.ArtPartners,.Estefsar"
     );
 
     for (var i = 0; i < reveals.length; i++) {
@@ -66,4 +66,23 @@ $(window).scroll(function () {
   } else {
     $(".navbar").css("z-index", "1050"); // Reset the z-index of the navbar
   }
+
+
+
+
+  //BLog Cards Animation
+
+  
+
+
+
+
+
+});
+
+$(".CardsPart .card,.Feedback .GreyBox,.ArtPartners .col-lg-3 img").each(function(index) {
+  var card = $(this);
+  setTimeout(function() {
+    card.addClass("active");
+  }, index * 300); // 500 milliseconds = 0.5 seconds
 });

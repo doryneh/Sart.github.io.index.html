@@ -191,14 +191,17 @@ Carousel Header
 
 }
 
-.CarouselPart .CarouselItem {
-    width: 8%;
+.CarouselPart .CarouselItem{
+    width: 8% !important;
     height: 100%;
-    transition: width 0.5s ease;
+    transition: width 0.5s ease ;
+    overflow: hidden;
 }
-
+.CarouselPart .CarouselItem img{
+    
+}
 .CarouselPart .CarouselItem.active {
-    width: 76%;
+    width: 76% !important;
 }
 
 .CarouselDots {
@@ -248,9 +251,9 @@ section.BlogCards .card {
     border: none;
 }
 
-section.BlogCards .card img {
+section.BlogCards .card .blogImage{
     border-radius: 15px;
-    width: 100%;
+    width: 100% !important;
 }
 
 /*************
@@ -370,6 +373,40 @@ end Estefsar
 
 /*************
 *************
+AboutUs
+**************
+**************/
+section.AboutUs .TextInImage .TextPart {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.AboutUs .TextInImage .TextPart .TextBigSize {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: normal;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*************
+*************
+End AboutUs 
+**************
+**************/
+
+
+
+
+/*************
+*************
 Footer
 **************
 **************/
@@ -420,27 +457,70 @@ Animation Top
 *********************/
 
 
-.AboutUs .BigImg img, .header .blueRectangle, .header .pinkRectangle, .AboutUs .TwoImageAboutUs .One, .footer .FooterRow p, .footer .FooterRow .socialMedia a, .footer .FooterRow img, .footer .FooterRow a, section.Sponsers .Title, section.Sponsers img, .Values .ParaTitle, .ArtSection .TopPart, .Research .TopPart, .Research .IMGPart, .ArtSection .IMGPart, .Values .Paragraph, .Documentations .Values .Services ul, .Documentations .TopPart, .Documentations .IMGPart, section.Partners, section.Partners .card, .BackImg, .AboutUs .TextRow a, .AboutUs .TextRow p, .AboutUs .TwoImageAboutUs .Two, .AboutUs .TextRow .Title {
+.header h1 .HeaderTitle,.header h2 ,.header .CarouselPart .CarouselItem,.ArtPartners .col-lg-3 img ,.YellowCircle , .SectionTitle .Text,.Feedback .GreyBox, .UnderText,.BlogCards .CardsPart .col-lg-3 .card,.footer .FooterRow p, .footer .FooterRow .socialMedia a, .footer .FooterRow img, .footer .FooterRow a {
     position: relative;
     opacity: 0;
-}
+    transition: 2s ease all ;
 
-header.header .ImagePart, .header .HeaderText {
+}
+.YellowCircle{
+    width: 0px ;
+    opacity: 0;
+}
+.active .YellowCircle{
+    width: 80px ;
     opacity: 1;
-    position: relative;
-    overflow: hidden;
+}
+.BlogCards .CardsPart .col-lg-3 .card ,.Feedback .GreyBox,.ArtPartners .col-lg-3 img{
+    transform: translateY(150%);
+    opacity: 0;
+    transition: transform 2s ease, opacity 2.5s ease;
 }
 
-.header .HeaderText img {
-    width: 0px !important;
-    transition: 2s ease all;
-    transition-delay: 2s;
-    overflow: hidden;
-}
 
-header.header.active.again .MiddlePattern img, .header.header.active.again .SidePattern {
-    transform: rotate(360deg) !important;
+.BlogCards.active .CardsPart .col-lg-3 .card.active,.Feedback.active .GreyBox.active,.ArtPartners.active .col-lg-3 img.active{
+    transform: translateY(0%) !important;
+    opacity: 1;
 }
+.header h1 .HeaderTitle,.header h2, .SectionTitle .Text, .UnderText{
+    transform: translateY(150%);
+}
+.header.active h1 .HeaderTitle ,.header.active h2,.active .SectionTitle .Text,.active .UnderText{
+    transform: translateY(0);
+    opacity: 1;
+}
+.header .CarouselPart .CarouselItem {
+    transform: translateX(150%);
+
+
+
+} 
+.header.active .CarouselPart .CarouselItem.CarouselOne {
+    transform: translateX(0%);
+    opacity: 1;
+    transition:width 0.5s ease,opacity 3s ease-in-out 0s, transform 2s ease-in-out 0s;
+
+} 
+.header.active .CarouselPart .CarouselItem.CarouselTwo {
+    transform: translateX(0%);
+    opacity: 1;
+    transition:width 0.5s ease,opacity 3s ease-in-out 1s, transform 2s ease-in-out 1s;
+
+} 
+.header.active .CarouselPart .CarouselItem.CarouselThree {
+    transform: translateX(0%);
+    opacity: 1;
+    transition:width 0.5s ease,opacity 3s ease-in-out 1.5s, transform 2s ease-in-out 1.5s;
+
+} 
+
+.header.active .CarouselPart .CarouselItem.CarouselFour {
+    transform: translateX(0%);
+    opacity: 1;
+    transition:width 0.5s ease,opacity 3s ease-in-out 2s,transform 2s ease-in-out 2s;
+
+} 
+
 
 .OverflowHidden {
     overflow: hidden;
@@ -618,53 +698,12 @@ section.Partners.active {
     opacity: 1;
 }
 
-.active .BigImg img, .active .TwoImageAboutUs .One {
+.active .BigImg img {
     transform: translateX(0);
     opacity: 1;
 }
 
-.TwoImageAboutUs .One {
-    transform: translateX(150%);
-    transition: 3s ease all;
 
-}
-
-section.AboutUs a.ServicesLink {
-    transform: translateY(150%);
-    transition: 5s ease all;
-    opacity: 0;
-}
-
-.TwoImageAboutUs .Two {
-    transform: translateY(150%);
-    transition: 4s ease all;
-}
-
-.active .TwoImageAboutUs .Two, .AboutUs.active .TextRow a {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.AboutUs .TextRow .Title {
-    transform: translate(-150%, 150%);
-    transition: 4s ease all;
-}
-
-.AboutUs.active .TextRow .Title {
-    transform: translate(0, 0);
-    opacity: 1;
-}
-
-.AboutUs .TextRow p {
-    transform: translate(-150%, 150%);
-    opacity: 0;
-    transition: 5s ease all;
-}
-
-.AboutUs.active .TextRow p {
-    transform: translate(0, 0);
-    opacity: 1;
-}
 
 section.Sponsers .Title, section.Sponsers img {
     transform: translateY(150%);
@@ -696,11 +735,6 @@ End Top Animation
 *********************
 *********************/
 
-/*********************
-*********************
-End Top Animation
-*********************
-*********************/
 
 
 /***************************************************************************************
@@ -825,25 +859,40 @@ End Top Animation
     section.Feedback .GreyBox .BigText {
         font-size: 20px;
     }
+
     .SectionTitle .YellowCircle {
         left: 30%;
     }
-    section.Estefsar .ImagesPart .ImgRow .SmallImg{
+
+    section.Estefsar .ImagesPart .ImgRow .SmallImg {
         height: unset;
         width: 27%;
     }
-    section.Estefsar .ImagesPart .ImgRow .bigImg{
-    width: 46%;
+
+    section.Estefsar .ImagesPart .ImgRow .bigImg {
+        width: 46%;
     }
+
     section.Estefsar .ImagesPart .PuprleBG {
-       
+
         height: 75px;
     }
+
     footer.footer .Footerrow {
         flex-direction: column;
     }
+
     section.Estefsar .YellowCircle {
         left: 17%;
+    }
+    section.AboutUs .TextInImage .TextPart {
+        width: 90%;
+    }
+    section.AboutUs .TextInImage .TextPart img{
+        width: 100px;
+    }
+    section.AboutUs .TextInImage .TextPart .TextBigSize {
+        font-size: 12px;
     }
 }
 
