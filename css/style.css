@@ -191,15 +191,15 @@ Carousel Header
 
 }
 
-.CarouselPart .CarouselItem{
+.CarouselPart .CarouselItem {
     width: 8% !important;
     height: 100%;
-    transition: width 0.5s ease ;
+    transition: width 0.5s ease;
     overflow: hidden;
 }
-.CarouselPart .CarouselItem img{
-    
-}
+
+.CarouselPart .CarouselItem img {}
+
 .CarouselPart .CarouselItem.active {
     width: 76% !important;
 }
@@ -251,7 +251,7 @@ section.BlogCards .card {
     border: none;
 }
 
-section.BlogCards .card .blogImage{
+section.BlogCards .card .blogImage {
     border-radius: 15px;
     width: 100% !important;
 }
@@ -269,9 +269,11 @@ Feedback
 **************
 **************/
 section.Feedback .YellowCircle {
-    left: 23%;
+    left: 40%;
 }
-
+section.Feedback .YellowCircle.YellowCircle2{
+    left:45%;
+}
 section.Feedback .GreyBox {
     border-radius: 8px;
     background: #F6F6F6;
@@ -457,101 +459,114 @@ Animation Top
 *********************/
 
 
-.header h1 .HeaderTitle,.header h2 ,.header .CarouselPart .CarouselItem,.Estefsar .ContactSartBtn,.Estefsar .ImgRow img,.Estefsar .PuprleBG,.ArtPartners .col-lg-3 img ,.YellowCircle , .SectionTitle .Text,.Feedback .GreyBox, .UnderText,.BlogCards .CardsPart .col-lg-3 .card,.footer .FooterRow p, .footer .FooterRow .socialMedia a, .footer .FooterRow img, .footer .FooterRow a {
+.header h1 .HeaderTitle, .header h2, .header .CarouselPart .CarouselItem, .Estefsar .ContactSartBtn, .Estefsar .ImgRow img, .Estefsar .PuprleBG, .ArtPartners .col-lg-3 img, .YellowCircle, .SectionTitle .Text, .Feedback .GreyBox, .UnderText, .BlogCards .CardsPart .col-lg-3 .card, .footer .FooterRow p, .footer .FooterRow .socialMedia a, .footer .FooterRow img, .footer .FooterRow a {
     position: relative;
     opacity: 0;
-    transition: 2s ease all ;
+    transition: 2s ease all;
 
 }
-.YellowCircle{
-    width: 0px ;
+
+.YellowCircle {
+    width: 0px;
     opacity: 0;
 }
-.active .YellowCircle{
-    width: 80px ;
+
+.active .YellowCircle {
+    width: 80px;
     opacity: 1;
 }
-.BlogCards .CardsPart .col-lg-3 .card ,.Feedback .GreyBox,.ArtPartners .col-lg-3 img,.Estefsar .PuprleBG,.Estefsar .ContactSartBtn{
+
+.BlogCards .CardsPart .col-lg-3 .card, .Feedback .GreyBox, .ArtPartners .col-lg-3 img, .Estefsar .PuprleBG, .Estefsar .ContactSartBtn {
     transform: translateY(150%);
     opacity: 0;
     transition: transform 2s ease, opacity 2.5s ease;
 }
-.Estefsar .PuprleBG{
-    transition: 1s ease all  !important;
+
+.Estefsar .PuprleBG {
+    transition: 1s ease all !important;
 }
 
-.BlogCards.active .CardsPart .col-lg-3 .card.active,.Feedback.active .GreyBox.active,.Estefsar.active .PuprleBG,.Estefsar.active .ContactSartBtn,.ArtPartners.active .col-lg-3 img.active{
+.BlogCards.active .CardsPart .col-lg-3 .card.active, .Feedback.active .GreyBox.active, .Estefsar.active .PuprleBG, .Estefsar.active .ContactSartBtn, .ArtPartners.active .col-lg-3 img.active {
     transform: translateY(0%) !important;
     opacity: 1;
 }
-.header h1 .HeaderTitle,.header h2, .SectionTitle .Text, .UnderText{
+
+.header h1 .HeaderTitle, .header h2, .SectionTitle .Text, .UnderText {
     transform: translateY(150%);
 }
-.header.active h1 .HeaderTitle ,.header.active h2,.active .SectionTitle .Text,.active .UnderText{
+
+.header.active h1 .HeaderTitle, .header.active h2, .active .SectionTitle .Text, .active .UnderText {
     transform: translateY(0);
     opacity: 1;
 }
+
 .header .CarouselPart .CarouselItem {
     transform: translateX(150%);
 
 
 
-} 
+}
+
 .header.active .CarouselPart .CarouselItem.CarouselOne {
     transform: translateX(0%);
     opacity: 1;
-    transition:width 0.5s ease,opacity 3s ease-in-out 0s, transform 2s ease-in-out 0s;
+    transition: width 0.5s ease, opacity 3s ease-in-out 0s, transform 2s ease-in-out 0s;
 
-} 
+}
+
 .header.active .CarouselPart .CarouselItem.CarouselTwo {
     transform: translateX(0%);
     opacity: 1;
-    transition:width 0.5s ease,opacity 3s ease-in-out 1s, transform 2s ease-in-out 1s;
+    transition: width 0.5s ease, opacity 3s ease-in-out 1s, transform 2s ease-in-out 1s;
 
-} 
+}
+
 .header.active .CarouselPart .CarouselItem.CarouselThree {
     transform: translateX(0%);
     opacity: 1;
-    transition:width 0.5s ease,opacity 3s ease-in-out 1.5s, transform 2s ease-in-out 1.5s;
+    transition: width 0.5s ease, opacity 3s ease-in-out 1.5s, transform 2s ease-in-out 1.5s;
 
-} 
+}
 
 .header.active .CarouselPart .CarouselItem.CarouselFour {
     transform: translateX(0%);
     opacity: 1;
-    transition:width 0.5s ease,opacity 3s ease-in-out 2s,transform 2s ease-in-out 2s;
+    transition: width 0.5s ease, opacity 3s ease-in-out 2s, transform 2s ease-in-out 2s;
 
-} 
+}
 
-.Estefsar .ImgRow img.SmallOne{
-    transform: translate(50%,50%);
-    opacity: 0;
-    transition: transform 2s ease, opacity 3s ease !important;
-}
-.Estefsar.active .ImgRow img.SmallOne{
-    transform: translate(0%,0%);
-    opacity: 1;
-}
-.Estefsar .ImgRow img.SmallTwo{
-    transform: translate(-50%,50%);
+.Estefsar .ImgRow img.SmallOne {
+    transform: translate(50%, 50%);
     opacity: 0;
     transition: transform 2s ease, opacity 3s ease !important;
 }
 
-.Estefsar.active .ImgRow img.SmallTwo{
+.Estefsar.active .ImgRow img.SmallOne {
+    transform: translate(0%, 0%);
     opacity: 1;
-    transform: translate(0%,0%);
-
 }
-.Estefsar .ImgRow img.bigImg{
-    transform: translate(0%,50%);
+
+.Estefsar .ImgRow img.SmallTwo {
+    transform: translate(-50%, 50%);
     opacity: 0;
     transition: transform 2s ease, opacity 3s ease !important;
 }
 
-.Estefsar.active .ImgRow img.bigImg{
+.Estefsar.active .ImgRow img.SmallTwo {
     opacity: 1;
-    transform: translate(0%,0%);
+    transform: translate(0%, 0%);
+
+}
+
+.Estefsar .ImgRow img.bigImg {
+    transform: translate(0%, 50%);
+    opacity: 0;
+    transition: transform 2s ease, opacity 3s ease !important;
+}
+
+.Estefsar.active .ImgRow img.bigImg {
+    opacity: 1;
+    transform: translate(0%, 0%);
 
 }
 
@@ -851,13 +866,18 @@ End Top Animation
     }
 
     header.header h1 .HeaderTitle {
-        font-size: 50px;
+        font-size: 35px;
     }
 
     h1 .YellowCircle {
-        left: 20%;
+        left: 25%;
     }
-
+    h1 .YellowCircle img{
+        width:40px;
+    }
+    footer.footer img{
+        width:90px;
+    }
     header.header h2 {
         font-size: 25px;
         margin-top: 20px;
@@ -873,7 +893,7 @@ End Top Animation
     }
 
     .SectionTitle {
-        font-size: 40px;
+        font-size: 30px;
         margin-bottom: 5px !important;
     }
 
@@ -896,6 +916,8 @@ End Top Animation
 
     .SectionTitle .YellowCircle {
         left: 30%;
+        width: 50px;
+        transform: translate(-4%, -50%);
     }
 
     section.Estefsar .ImagesPart .ImgRow .SmallImg {
@@ -919,12 +941,15 @@ End Top Animation
     section.Estefsar .YellowCircle {
         left: 17%;
     }
+
     section.AboutUs .TextInImage .TextPart {
         width: 90%;
     }
-    section.AboutUs .TextInImage .TextPart img{
+
+    section.AboutUs .TextInImage .TextPart img {
         width: 100px;
     }
+
     section.AboutUs .TextInImage .TextPart .TextBigSize {
         font-size: 12px;
     }
